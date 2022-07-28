@@ -35,9 +35,22 @@
      owner: user
      group: user
 
+  - name: add ansible user
+    user:
+      name: ansible
+      system: yes
+
+  - name: set up sudo for ansible user
+    copy:
+      src: files/sudoers_ansible
+      dest: /etc/sudoers.d/ansible
+      owner: root
+      group: root
+      mode: 0440
+
   - name: add ansible-pull cron job
     cron:
       name: ansible auto-provision
-      user: user
+      user: ansible
       minute: "*/10"
       job: ansible-pull -o -U https://github.com/DeveloperDurp/DesktopAnsible.git
