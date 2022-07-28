@@ -26,7 +26,7 @@
     become_user: user
     dconf:
       key: "/org/gnome/desktop/background/picture-uri-dark"
-      value: "'file:///usr/share/backgrounds/kate-hazen-fractal-mountains.png'"
+      value: "'file:///usr/share/backgrounds/pop/kate-hazen-fractal-mountains.png'"
 
   - name: set wallpaper position
     become_user: user
