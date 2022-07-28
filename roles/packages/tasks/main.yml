@@ -1,0 +1,9 @@
+- name: Load a variable file based on the OS type
+  include_vars: "{{ item }}"
+  with_first_found:
+  - "./roles/packages/vars/{{ ansible_distribution }}-{{ ansible_distribution_version }}.yml"
+  - "./roles/packages/vars/{{ ansible_distribution }}.yml"
+  - "./roles/packages/vars/defaults.yml"
+
+- name:
+  include_tasks: "{{ ansible_distribution }}.yml"
