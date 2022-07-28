@@ -9,18 +9,11 @@
       name:
         - htop
 
-  - name: copy wallpaper file
-    copy:
-      src: files/wallpaper.png
-      dest: /usr/share/backgrounds/ansible-wallpaper.png
-      owner: root
-      group: root
-
   - name: set wallpaper
     become_user: user
     dconf:
       key: "/org/gnome/desktop/background/picture-uri"
-      value: "'file:///usr/share/backgrounds/ansible-wallpaper.png'"
+      value: "'file:///usr/share/backgrounds/pop/kate-hazen-pop-retro1.png'"
 
   - name: set wallpaper position
     become_user: user
@@ -28,7 +21,7 @@
       key: "/org/gnome/desktop/background/picture-options"
       value: "'zoom'"
 
-  - name: copy .bashrc file
+  - name: copy .zshrc file
     copy:
      src: files/zshrc
      dest: /home/user/.zshrc
