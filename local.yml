@@ -1,7 +1,19 @@
 ---
-- hosts: localhost
-  connection: local
+- hosts: all
+  tags: always
   become: true
+  pre_tasks:
+    - name: pre-run | update package cache (arch)
+      tags: always
+      pacman: update_cache=yes
+      changed_when: False
+      when: ansible_distribution == "Archlinux"
+
+    - name: pre-run | update package cache (debian, etc)
+      tags: always
+      apt: update_cache=yes
+      changed_when: False
+      when: ansible_distribution in ["Debian", "Ubuntu"]
 
   tasks:
   - name: install packages
@@ -13,7 +25,7 @@
     become_user: user
     dconf:
       key: "/org/gnome/desktop/background/picture-uri"
-      value: "'file:///usr/share/backgrounds/pop/kate-hazen-pop-retro1.png'"
+      value: "file:///usr/share/backgrounds/pop/kate-hazen-pop-retro1.png"
 
   - name: set wallpaper position
     become_user: user
