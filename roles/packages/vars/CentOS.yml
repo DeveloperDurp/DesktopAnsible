@@ -3,6 +3,7 @@ required_packages:
     - flatpak
     - powershell
     - gnome-tweaks
+    - gnome-shell-extensions
 
 required_repository:
     - {baseurl: 'https://packages.microsoft.com/rhel/8/prod/', name: 'Microsoft', gpgkey: 'https://packages.microsoft.com/keys/microsoft.asc'}
