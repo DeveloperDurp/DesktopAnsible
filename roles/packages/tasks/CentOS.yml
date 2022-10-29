@@ -33,7 +33,7 @@
 
 - name: configure flatpak
   community.general.flatpak_remote:
-    name: Flathub
+    name: flathub
     state: present
     flatpakrepo_url: https://dl.flathub.org/repo/flathub.flatpakrepo
 
