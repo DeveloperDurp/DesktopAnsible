@@ -35,7 +35,7 @@
   community.general.flatpak_remote:
     name: Flathub
     state: present
-    flatpakrepo_url: https://dl.flathub.org/repo/
+    flatpakrepo_url: https://dl.flathub.org/repo/flathub.flatpakrepo
 
 - name: install flatpak
   become_user: user
