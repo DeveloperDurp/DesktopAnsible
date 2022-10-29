@@ -4,4 +4,4 @@ required_packages:
     - powershell
 
 required_repository:
-    - {baseurl: 'https://packages.microsoft.com/config/rhel/8/prod.repo', name: 'Microsoft'}
+    - {baseurl: 'https://packages.microsoft.com/rhel/8/prod/', name: 'Microsoft'}

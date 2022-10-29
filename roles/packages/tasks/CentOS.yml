@@ -3,6 +3,7 @@
     name: "{{ item.name }}"
     description: "Ansible repositories"
     baseurl: "{{ item.baseurl }}"
+    async: yes
   with_items:  "{{ required_repository }}"     
 
 - name: Update packages
