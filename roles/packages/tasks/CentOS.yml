@@ -30,3 +30,15 @@
   with_items:  "{{ required_packages }}" 
   retries: 3
   delay: 10    
+
+- name: configure flatpak
+  community.general.flatpak_remote:
+    name: Flathub
+    state: present
+    flatpakrepo_url: https://dl.flathub.org/repo/
+
+- name: install flatpak
+  become_user: user
+  community.general.flatpak:
+    name: "{{ item }}"
+  with_items:  "{{ required__flatpak_packages }}"     
