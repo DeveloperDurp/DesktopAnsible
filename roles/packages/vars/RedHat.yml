@@ -4,7 +4,7 @@ required_packages:
     - flatpak
     - powershell
     - gnome-tweaks
-    - gnome-shell-extensions
+    #- gnome-shell-extensions
     - git
     - zsh
     - dotnet-sdk-3.1
@@ -13,7 +13,6 @@ required_packages:
     - powershell
     - kubectl
     - podman
-    - octopuscli
     - terraform
     - helm
     - htop
@@ -22,6 +21,8 @@ required_packages:
 required_repository:
     - {baseurl: 'https://packages.microsoft.com/rhel/8/prod/', name: 'Microsoft', gpgkey: 'https://packages.microsoft.com/keys/microsoft.asc'}
     - {baseurl: 'https://packages.cloud.google.com/yum/repos/kubernetes-el7-x86_64/', name: 'Kubernetes', gpgkey: 'https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg'}
+    - {baseurl: 'https://rpm.releases.hashicorp.com/RHEL/9/x86_64/stable/', name: 'Hashicorp Stable', gpgkey: 'https://rpm.releases.hashicorp.com/gpg'}
+      
 
 required_flatpak_packages:
     - io.gitlab.librewolf-community
