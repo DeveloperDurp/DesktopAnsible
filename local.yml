@@ -1,6 +1,8 @@
 ---
 - hosts: localhost
   connection: local
+  become: true
 
   roles:
     - packages
+    - ansibleuser
