@@ -4,6 +4,21 @@ required_packages:
     - powershell
     - gnome-tweaks
     - gnome-shell-extensions
+    - git
+    - zsh
+    - dotnet-sdk-3.1
+    - dotnet-sdk-6.0
+    - dotnet-sdk-7.0
+    - powershell
+    - kubectl
+    - podman
+    - octopuscli
+    - nodejs
+    - terraform
+    - yarn
+    - helm
+    - htop
+    - azure-cli
 
 required_repository:
     - {baseurl: 'https://packages.microsoft.com/rhel/8/prod/', name: 'Microsoft', gpgkey: 'https://packages.microsoft.com/keys/microsoft.asc'}
