@@ -43,12 +43,12 @@
     name: "{{ item }}"
   with_items:  "{{ required_flatpak_packages }}"     
 
-- name: download fedora files
-  ansible.builtin.get_url:
-    url: "{{ item.url }}"
-    dest: "/temp/{{ item.name }}"
-    mode: '0777'
-  with_items:  "{{ required_manual_packages }}"   
+- name: Install packages from fedora
+  ansible.builtin.yum:
+    name: "{{ item.url }}"
+    state: present
+  with_items:  "{{ required_manual_packages }}"      
+
 
 #wget https://dl.fedoraproject.org/pub/fedora/linux/releases/36/Everything/x86_64/os/Packages/h/helm-3.5.4-2.fc35.x86_64.rpm -O helm.rpm
 #rpmrebuild helm.rpm
