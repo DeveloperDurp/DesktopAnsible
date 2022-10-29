@@ -49,9 +49,3 @@
     state: present
     disable_gpg_check: yes
   with_items:  "{{ required_manual_packages }}"      
-
-
-#wget https://dl.fedoraproject.org/pub/fedora/linux/releases/36/Everything/x86_64/os/Packages/h/helm-3.5.4-2.fc35.x86_64.rpm -O helm.rpm
-#rpmrebuild helm.rpm
-#yum install helm.rpm
-       
