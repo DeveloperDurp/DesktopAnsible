@@ -1,3 +1,7 @@
 required_packages:
     - firefox
     - flatpak
+    - powershell
+
+required_repository:
+    - {baseurl: 'https://packages.microsoft.com/config/rhel/8/prod.repo', name: 'Microsoft'}

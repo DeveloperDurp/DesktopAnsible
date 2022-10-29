@@ -1,3 +1,10 @@
+- name: Add repository
+  ansible.builtin.yum_repository:
+    name: "{{ item.name }}"
+    description: "Ansible repositories"
+    baseurl: "{{ item.baseurl }}"
+  with_items:  "{{ required_repository }}"     
+
 - name: Update packages
   yum: 
     name: '*'
