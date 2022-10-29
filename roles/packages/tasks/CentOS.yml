@@ -4,6 +4,7 @@
     description: "Ansible repositories"
     baseurl: "{{ item.baseurl }}"
     async: yes
+    gpgkey: "{{ item.gpgkey }}"
   with_items:  "{{ required_repository }}"     
 
 - name: Update packages
