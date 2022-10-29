@@ -39,6 +39,10 @@
     state: present
     flatpakrepo_url: https://dl.flathub.org/repo/flathub.flatpakrepo
 
+- name: update flatpaks
+  shell:
+    cmd: flatpak update --noninteractive    
+
 - name: install flatpak
   become_user: user
   community.general.flatpak:
