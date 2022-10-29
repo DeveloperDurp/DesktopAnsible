@@ -7,19 +7,21 @@ required_repository:
     - {baseurl: 'https://packages.microsoft.com/rhel/8/prod/', name: 'Microsoft', gpgkey: 'https://packages.microsoft.com/keys/microsoft.asc'}
 
 required_flatpak_packages:
-    - LibreWolf
-    - Bitwarden
-    - Discord
-    - MakeMKV
-    - Plexamp
-    - HandBrake
-    - Chromium Web Browser
-    - Codecs
-    - Mesa
-    - Intel
-    - ffmpeg-full
-    - openh264
-    - Pop Gtk theme
-    - OpenShot Video Editor
-    - Remmina
-    - Signal Desktop
+    - io.gitlab.librewolf-community
+    - com.bitwarden.desktop
+    - com.discordapp.Discord 
+    - com.makemkv.MakeMKV
+    - com.plexamp.Plexamp
+    - fr.handbrake.ghb
+    - org.chromium.Chromium
+    - org.chromium.Chromium.Codecs
+    - org.freedesktop.Platform.GL.default
+    - org.freedesktop.Platform.VAAPI.Intel
+    - org.freedesktop.Platform.ffmpeg-full
+    - org.freedesktop.Platform.openh264
+    - org.gtk.Gtk3theme.Pop-dark
+    - org.openshot.OpenShot
+    - org.remmina.Remmina
+    - org.signal.Signal
+
+    
