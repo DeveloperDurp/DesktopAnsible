@@ -1,0 +1,38 @@
+required_packages:
+    - firefox
+    - flatpak
+    - powershell
+    - gnome-tweaks
+    #- gnome-shell-extensions
+    - git
+    - zsh
+    - dotnet-sdk-3.1
+    - dotnet-sdk-6.0
+    - powershell
+    - kubectl
+    - podman
+    - htop
+    - azure-cli
+
+required_repository:
+    - {baseurl: 'https://packages.microsoft.com/rhel/8/prod/', name: 'Microsoft', gpgkey: 'https://packages.microsoft.com/keys/microsoft.asc'}
+    - {baseurl: 'https://packages.cloud.google.com/yum/repos/kubernetes-el7-x86_64/', name: 'Kubernetes', gpgkey: 'https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg'}
+    - {baseurl: 'https://rpm.releases.hashicorp.com/RHEL/8/x86_64/stable/', name: 'Hashicorp', gpgkey: 'https://rpm.releases.hashicorp.com/gpg'}
+      
+required_flatpak_packages:
+    - io.gitlab.librewolf-community
+    - com.bitwarden.desktop
+    - com.discordapp.Discord 
+    - com.makemkv.MakeMKV
+    - com.plexamp.Plexamp
+    - fr.handbrake.ghb
+    - org.chromium.Chromium
+    - org.chromium.Chromium.Codecs
+    - runtime/org.freedesktop.Platform.GL.default/x86_64/22.08
+    - runtime/org.freedesktop.Platform.VAAPI.Intel/x86_64/22.08
+    - runtime/org.freedesktop.Platform.ffmpeg-full/x86_64/22.08
+    - runtime/org.freedesktop.Platform.openh264/x86_64/2.3.1
+    - org.gtk.Gtk3theme.Pop-dark
+    - org.openshot.OpenShot
+    - org.remmina.Remmina
+    - org.signal.Signal
