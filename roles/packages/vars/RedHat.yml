@@ -1,4 +1,5 @@
 required_packages:
+    - epel-release
     - firefox
     - flatpak
     - powershell
@@ -13,9 +14,7 @@ required_packages:
     - kubectl
     - podman
     - octopuscli
-    - nodejs
     - terraform
-    - yarn
     - helm
     - htop
     - azure-cli
