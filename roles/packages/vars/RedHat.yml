@@ -39,6 +39,7 @@ required_flatpak_packages:
     - org.openshot.OpenShot
     - org.remmina.Remmina
     - org.signal.Signal
+    - org.gnome.Extensions
 
 required_manual_packages:
     - {url: 'https://dl.fedoraproject.org/pub/fedora/linux/releases/36/Everything/x86_64/os/Packages/h/helm-3.5.4-2.fc35.x86_64.rpm', name: 'helm.rpm'}    
