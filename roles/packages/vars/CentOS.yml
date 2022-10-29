@@ -2,6 +2,7 @@ required_packages:
     - firefox
     - flatpak
     - powershell
+    - gnome-tweaks
 
 required_repository:
     - {baseurl: 'https://packages.microsoft.com/rhel/8/prod/', name: 'Microsoft', gpgkey: 'https://packages.microsoft.com/keys/microsoft.asc'}
