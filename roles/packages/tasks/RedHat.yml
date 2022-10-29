@@ -43,9 +43,10 @@
     name: "{{ item }}"
   with_items:  "{{ required_flatpak_packages }}"     
 
-- name: Install packages from fedora
+- name: Manual install packages
   ansible.builtin.yum:
     name: "{{ item.url }}"
     state: present
     disable_gpg_check: yes
-  with_items:  "{{ required_manual_packages }}"      
+  with_items:  "{{ required_manual_packages }}"    
+  when: required_manual_packages is defined
