@@ -41,4 +41,4 @@
   become_user: user
   community.general.flatpak:
     name: "{{ item }}"
-  with_items:  "{{ required__flatpak_packages }}"     
+  with_items:  "{{ required_flatpak_packages }}"     
