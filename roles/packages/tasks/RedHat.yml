@@ -47,6 +47,7 @@
   ansible.builtin.yum:
     name: "{{ item.url }}"
     state: present
+    disable_gpg_check: yes
   with_items:  "{{ required_manual_packages }}"      
 
 
