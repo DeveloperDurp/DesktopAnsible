@@ -57,3 +57,7 @@
     disable_gpg_check: yes
   with_items:  "{{ required_manual_packages }}"    
   when: required_manual_packages is defined
+
+- name: set gui
+  shell:
+    cmd: systemctl set-default graphical.target 
