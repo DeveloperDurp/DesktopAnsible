@@ -5,7 +5,8 @@
     baseurl: "{{ item.baseurl }}"
     async: yes
     gpgkey: "{{ item.gpgkey }}"
-  with_items:  "{{ required_repository }}"     
+  with_items:  "{{ required_repository }}"  
+  when: required_repository is defined   
 
 - name: Update packages
   yum: 
@@ -30,6 +31,7 @@
   with_items:  "{{ required_packages }}" 
   retries: 3
   delay: 10    
+  when: required_packages is defined
 
 - name: configure flatpak
   community.general.flatpak_remote:
@@ -42,6 +44,7 @@
   community.general.flatpak:
     name: "{{ item }}"
   with_items:  "{{ required_flatpak_packages }}"     
+  when: required_flatpak_packages is defined
 
 - name: Manual install packages
   ansible.builtin.yum:
