@@ -8,3 +8,18 @@ required_repository:
 
 required_flatpak_packages:
     - LibreWolf
+    - Bitwarden
+    - Discord
+    - MakeMKV
+    - Plexamp
+    - HandBrake
+    - Chromium Web Browser
+    - Codecs
+    - Mesa
+    - Intel
+    - ffmpeg-full
+    - openh264
+    - Pop Gtk theme
+    - OpenShot Video Editor
+    - Remmina
+    - Signal Desktop
