@@ -1,12 +1,12 @@
 dconf:
-    - {key: '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/binding', name: "'<Super>t'"}
-    - {key: '"/org/gnome/desktop/datetime/automatic-timezone"', name: "true"}
-    - {key: '/org/gnome/desktop/interface/clock-show-date', name: "true"}
-    - {key: '/org/gnome/desktop/interface/clock-format', name: "'12h'"}
-    - {key: '/org/gnome/desktop/background/picture-uri', name: "'file:///usr/share/backgrounds/ansible-wallpaper.png'"}
-    - {key: '/org/gnome/desktop/interface/color-scheme', name: "'prefer-dark'"}
-    - {key: '/org/gnome/desktop/interface/document-font-name', name: "'FiraCode Nerd Font weight=450 11'"}
-    - {key: '/org/gnome/desktop/interface/monospace-font-name', name: "'FiraCode Nerd Font Mono weight=450 10'"}
-    - {key: '/org/gnome/desktop/interface/font-name', name: "'FiraCode Nerd Font weight=450 11'"}
-    - {key: '/org/gnome/desktop/wm/preferences', name: "'FiraCode Nerd Font weight=450 11'"}
-    - {key: '/org/gnome/desktop/sound', name: "true"}
+    - {key: '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/binding', value: "'<Super>t'"}
+    - {key: '"/org/gnome/desktop/datetime/automatic-timezone"', value: "true"}
+    - {key: '/org/gnome/desktop/interface/clock-show-date', value: "true"}
+    - {key: '/org/gnome/desktop/interface/clock-format', value: "'12h'"}
+    - {key: '/org/gnome/desktop/background/picture-uri', value: "'file:///usr/share/backgrounds/ansible-wallpaper.png'"}
+    - {key: '/org/gnome/desktop/interface/color-scheme', value: "'prefer-dark'"}
+    - {key: '/org/gnome/desktop/interface/document-font-value', value: "'FiraCode Nerd Font weight=450 11'"}
+    - {key: '/org/gnome/desktop/interface/monospace-font-value', value: "'FiraCode Nerd Font Mono weight=450 10'"}
+    - {key: '/org/gnome/desktop/interface/font-value', value: "'FiraCode Nerd Font weight=450 11'"}
+    - {key: '/org/gnome/desktop/wm/preferences', value: "'FiraCode Nerd Font weight=450 11'"}
+    - {key: '/org/gnome/desktop/sound', value: "true"}
