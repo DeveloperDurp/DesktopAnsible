@@ -1,6 +1,6 @@
 dconf:
     - {key: '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/binding', value: "'<Super>t'"}
-    - {key: '"/org/gnome/desktop/datetime/automatic-timezone"', value: "true"}
+    - {key: '/org/gnome/desktop/datetime/automatic-timezone', value: "true"}
     - {key: '/org/gnome/desktop/interface/clock-show-date', value: "true"}
     - {key: '/org/gnome/desktop/interface/clock-format', value: "'12h'"}
     - {key: '/org/gnome/desktop/background/picture-uri', value: "'file:///usr/share/backgrounds/ansible-wallpaper.png'"}
