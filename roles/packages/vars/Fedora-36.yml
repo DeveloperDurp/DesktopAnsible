@@ -53,7 +53,7 @@ required_flatpak_packages:
     - org.gnome.calculator
     - org.gnome.baobab
     - org.gnome.firmware
-    - org.gnome.screenshot
+    - org.gnome.Screenshot
     - org.gnome.eog
 
 services_to_enable:
