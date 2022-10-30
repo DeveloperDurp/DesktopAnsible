@@ -17,9 +17,6 @@ required_packages:
     - gnome-tweaks
     - gnome-shell-extension-pop-shell
     - gnome-shell-extension-dash-to-dock
-    - gnome-calculator
-    - gnome-disk-utility
-    - gnome-system-monitor
     - nano
     - gedit
     - code
@@ -53,6 +50,11 @@ required_flatpak_packages:
     - org.remmina.Remmina
     - org.signal.Signal
     - org.gnome.Extensions
+    - org.gnome.calculator
+    - org.gnome.baobab
+    - org.gnome.firmware
+    - org.gnome.screenshot
+    - org.gnome.eog
 
 services_to_enable:
     - touchegg
