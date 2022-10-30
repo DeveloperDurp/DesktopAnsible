@@ -2,8 +2,6 @@ required_packages:
     - firefox
     - flatpak
     - powershell
-    - gnome-tweaks
-    #- gnome-shell-extensions
     - git
     - zsh
     - dotnet-sdk-3.1

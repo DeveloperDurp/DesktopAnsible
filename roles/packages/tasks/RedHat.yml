@@ -61,3 +61,20 @@
 - name: set gui
   shell:
     cmd: systemctl set-default graphical.target 
+
+- name: ensure fonts directory
+  file:
+    path: "{{ lookup('env', 'HOME') }}/.fonts"
+    state: directory
+
+- name: FiraCode exists
+  shell: "ls {{ lookup('env', 'HOME') }}/.fonts/*FiraCode*"
+  register: FiraCode_exists
+  ignore_errors: yes
+
+- name: Download FiraCode
+  when: FiraCode_exists is failed
+  ansible.builtin.unarchive:
+    src: https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/FiraCode.zip
+    dest: "{{ lookup('env', 'HOME') }}/.fonts/"
+    remote_src: yes
