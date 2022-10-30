@@ -65,12 +65,12 @@
 - name: ensure fonts directory
   become_user: user
   file:
-    path: "{{ lookup('env', 'HOME') }}/.fonts"
+    path: "~/.fonts"
     state: directory
 
 - name: FiraCode exists
   become_user: user
-  shell: "ls {{ lookup('env', 'HOME') }}/.fonts/*FiraCode*"
+  shell: "ls ~/.fonts/*FiraCode*"
   register: FiraCode_exists
   ignore_errors: yes
 
@@ -79,5 +79,5 @@
   become_user: user
   ansible.builtin.unarchive:
     src: https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/FiraCode.zip
-    dest: "{{ lookup('env', 'HOME') }}/.fonts/"
+    dest: "~/.fonts/"
     remote_src: yes
