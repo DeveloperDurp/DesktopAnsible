@@ -24,6 +24,7 @@ required_packages:
     - code
     - "@base-x"
     - gnome-shell
+    - unzip
     
 
 required_repository:
