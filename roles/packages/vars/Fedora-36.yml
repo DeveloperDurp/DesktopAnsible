@@ -23,6 +23,8 @@ required_packages:
     - nano
     - gedit
     - code
+    - "@base-x"
+    - gnome-shell
     
 
 required_repository:
