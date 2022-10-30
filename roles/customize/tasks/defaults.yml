@@ -42,7 +42,7 @@
 
 - name: gnome | appearance | set lock screen background
   tags: gnome,gnome-lockscreen
-  become_user: jay
+  become_user: user
   dconf:
     key: "org/gnome/desktop/interface-color/scheme"
     value: "'prefer-dark'"
