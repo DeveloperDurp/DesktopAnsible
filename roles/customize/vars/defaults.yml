@@ -4,6 +4,7 @@ dconf:
     - {key: '/org/gnome/desktop/interface/clock-show-date', value: "true"}
     - {key: '/org/gnome/desktop/interface/clock-format', value: "'12h'"}
     - {key: '/org/gnome/desktop/background/picture-uri', value: "'file:///usr/share/backgrounds/ansible-wallpaper.png'"}
+    - {key: '/org/gnome/desktop/background/picture-uri-dark', value: "'file:///usr/share/backgrounds/ansible-wallpaper.png'"}
     - {key: '/org/gnome/desktop/interface/color-scheme', value: "'prefer-dark'"}
     - {key: '/org/gnome/desktop/interface/document-font-value', value: "'FiraCode Nerd Font weight=450 11'"}
     - {key: '/org/gnome/desktop/interface/monospace-font-value', value: "'FiraCode Nerd Font Mono weight=450 10'"}
