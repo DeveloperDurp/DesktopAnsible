@@ -38,3 +38,12 @@
   dconf:
     key: "/org/gnome/desktop/background/picture-uri"
     value: "'file:///usr/share/backgrounds/ansible-wallpaper.png'"    
+
+
+- name: gnome | appearance | set lock screen background
+  tags: gnome,gnome-lockscreen
+  become_user: jay
+  dconf:
+    key: "org/gnome/desktop/interface-color/scheme"
+    value: "'prefer-dark'"
+    
