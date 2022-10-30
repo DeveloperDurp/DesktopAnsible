@@ -40,8 +40,7 @@
     value: "'file:///usr/share/backgrounds/ansible-wallpaper.png'"    
 
 
-- name: gnome | appearance | set lock screen background
-  tags: gnome,gnome-lockscreen
+- name: set dark mode
   become_user: user
   dconf:
     key: "org/gnome/desktop/interface-color/scheme"
