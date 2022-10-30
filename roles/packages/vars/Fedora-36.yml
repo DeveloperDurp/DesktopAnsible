@@ -14,6 +14,7 @@ required_packages:
     - terminator
     - nautilus
     - touchegg
+    - gnome-tweaks
     - gnome-shell-extension-pop-shell
     - gnome-shell-extension-dash-to-dock
     - gnome-calculator

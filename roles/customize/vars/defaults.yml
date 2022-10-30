@@ -17,3 +17,6 @@ dconf:
     - {key: '/org/gnome/shell/extensions/pop-shell/gap-inner', value: "uint32 1"}
     - {key: '/org/gnome/shell/extensions/pop-shell/gap-outer', value: "uint32 1"}
     - {key: '/org/gnome/shell/extensions/dash-to-dock/dash-max-icon-size', value: "32"}
+    - {key: '/org/gnome/shell/extensions/dash-to-dock/show-trash', value: "false"}
+    - {key: '/org/gnome/shell/extensions/dash-to-dock/show-mounts', value: "false"}
+    - {key: '/org/gnome/shell/extensions/dash-to-dock/apply-custom-theme', value: "true"}
