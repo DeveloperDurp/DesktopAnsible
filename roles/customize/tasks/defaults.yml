@@ -43,6 +43,6 @@
 - name: set dark mode
   become_user: user
   dconf:
-    key: "/org/gnome/desktop/interface-color/scheme"
+    key: "/org/gnome/desktop/interface/color-scheme"
     value: "'prefer-dark'"
     
