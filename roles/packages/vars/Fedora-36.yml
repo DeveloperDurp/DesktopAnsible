@@ -25,6 +25,7 @@ required_packages:
     - "@base-x"
     - gnome-shell
     - unzip
+    - crontabs
     
 
 required_repository:
