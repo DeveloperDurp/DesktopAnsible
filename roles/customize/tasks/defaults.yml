@@ -2,3 +2,39 @@
   dconf:
     key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/binding"
     value: "'<Super>t'"
+
+#################
+# date and time #
+#################
+
+- name: automatic timezone
+  dconf:
+    key: "/org/gnome/desktop/datetime/automatic-timezone"
+    value: "true"
+
+- name: clock show date
+  dconf:
+    key: "/org/gnome/desktop/interface/clock-show-date"
+    value: "true"
+
+- name: clock format
+  dconf:
+    key: "/org/gnome/desktop/interface/clock-format"
+    value: "'12h'"    
+
+#################
+# wallpaper #
+#################
+
+- name: copy wallpaper file
+  copy:
+    src: files/wallpaper.png
+    dest: /usr/share/backgrounds/ansible-wallpaper.png
+    owner: root
+    group: root
+
+- name: set wallpaper
+  become_user: user
+  dconf:
+    key: "/org/gnome/desktop/background/picture-uri"
+    value: "'file:///usr/share/backgrounds/ansible-wallpaper.png'"    
