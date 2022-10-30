@@ -17,6 +17,10 @@ required_packages:
     - touchegg
     - gnome-shell-extension-pop-shell
     - gnome-shell-extension-dash-to-dock
+    - gnome-calculator
+    - gnome-disk-utility
+    - gnome-system-monitor
+    
 
 required_repository:
     - {baseurl: 'https://packages.microsoft.com/rhel/8/prod/', name: 'Microsoft', gpgkey: 'https://packages.microsoft.com/keys/microsoft.asc'}
