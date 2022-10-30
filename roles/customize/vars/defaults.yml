@@ -6,10 +6,11 @@ dconf:
     - {key: '/org/gnome/desktop/background/picture-uri', value: "'file:///usr/share/backgrounds/ansible-wallpaper.png'"}
     - {key: '/org/gnome/desktop/background/picture-uri-dark', value: "'file:///usr/share/backgrounds/ansible-wallpaper.png'"}
     - {key: '/org/gnome/desktop/interface/color-scheme', value: "'prefer-dark'"}
-    - {key: '/org/gnome/desktop/interface/document-font-value', value: "'FiraCode Nerd Font weight=450 11'"}
-    - {key: '/org/gnome/desktop/interface/monospace-font-value', value: "'FiraCode Nerd Font Mono weight=450 10'"}
-    - {key: '/org/gnome/desktop/interface/font-value', value: "'FiraCode Nerd Font weight=450 11'"}
-    - {key: '/org/gnome/desktop/wm/preferences', value: "'FiraCode Nerd Font weight=450 11'"}
+    - {key: '/org/gnome/desktop/interface/gtk-theme', value: "'Adwaita-dark'"}
+    - {key: '/org/gnome/desktop/interface/document-font-name', value: "'FuraMono NFM 11'"}
+    - {key: '/org/gnome/desktop/interface/monospace-font-name', value: "'FuraMono NFM 11'"}
+    - {key: '/org/gnome/desktop/interface/font-name', value: "'FuraMono NFM 11'"}
+    - {key: '/org/gnome/desktop/wm/preferences/titlebar-font', value: "'FuraMono NFM 11'"}
     - {key: '/org/gnome/desktop/sound', value: "true"}
     - {key: '/org/gnome/shell/favorite-apps', value: "['io.gitlab.librewolf-community.desktop','terminator.desktop']"}
     - {key: '/org/gnome/shell/enabled-extensions', value: "['pop-shell@system76.com','dash-to-dock@micxgx.gmail.com']"}
@@ -20,3 +21,9 @@ dconf:
     - {key: '/org/gnome/shell/extensions/dash-to-dock/show-trash', value: "false"}
     - {key: '/org/gnome/shell/extensions/dash-to-dock/show-mounts', value: "false"}
     - {key: '/org/gnome/shell/extensions/dash-to-dock/apply-custom-theme', value: "true"}
+    - {key: '/org/gnome/shell/extensions/dash-to-dock/multi-monitor', value: "true"}
+    - {key: '/org/gnome/desktop/peripherals/touchpad', value: "false"}
+
+configs:
+    - {src: 'terminator', dest: 'terminator', destname: 'config'}
+

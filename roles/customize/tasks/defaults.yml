@@ -65,3 +65,22 @@
     group: "user"
     mode: '0700'     
     state: directory 
+
+- name: Create config folder
+  become_user: user
+  ansible.builtin.file:
+    path: ~/.config/{{ item.dest }}
+    owner: "user"
+    group: "user"
+    mode: '0700'     
+    state: directory 
+  with_items:  "{{ configs }}"       
+
+- name: "Copy Config files"
+  become_user: user
+  template:
+    src: "templates/{{ item.src }}"
+    dest: "~/.config/{{ item.dest }}/{{ item.destname }}"
+    owner: "user"
+    force: yes    
+  with_items:  "{{ configs }}"          
