@@ -1,0 +1,4 @@
+- name: terminal shortcut binding
+  dconf:
+    key: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/binding"
+    value: "'<Super>t'"
