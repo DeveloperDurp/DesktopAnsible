@@ -20,10 +20,14 @@ required_packages:
     - gnome-calculator
     - gnome-disk-utility
     - gnome-system-monitor
+    - nano
+    - gedit
+    - code
     
 
 required_repository:
     - {baseurl: 'https://packages.microsoft.com/rhel/8/prod/', name: 'Microsoft', gpgkey: 'https://packages.microsoft.com/keys/microsoft.asc'}
+    - {baseurl: 'https://packages.microsoft.com/yumrepos/vscode', name: 'Visual Studio Code', gpgkey: 'https://packages.microsoft.com/keys/microsoft.asc'}
     - {baseurl: 'https://packages.cloud.google.com/yum/repos/kubernetes-el7-x86_64/', name: 'Kubernetes', gpgkey: 'https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg'}
     - {baseurl: 'https://rpm.releases.hashicorp.com/RHEL/8/x86_64/stable/', name: 'Hashicorp', gpgkey: 'https://rpm.releases.hashicorp.com/gpg'}
       
