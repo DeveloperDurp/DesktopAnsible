@@ -14,7 +14,9 @@ required_packages:
     - azure-cli
     - terminator
     - dolphin
+    - touchegg
     - gnome-shell-extension-pop-shell
+    - gnome-shell-extension-dash-to-dock
 
 required_repository:
     - {baseurl: 'https://packages.microsoft.com/rhel/8/prod/', name: 'Microsoft', gpgkey: 'https://packages.microsoft.com/keys/microsoft.asc'}
@@ -39,3 +41,6 @@ required_flatpak_packages:
     - org.remmina.Remmina
     - org.signal.Signal
     - org.gnome.Extensions
+
+services_to_enable:
+    - touchegg

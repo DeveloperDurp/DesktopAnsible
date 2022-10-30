@@ -70,7 +70,7 @@
 
 - name: FiraCode exists
   become_user: user
-  shell: "ls ~/.fonts/*FiraCode*"
+  shell: "ls ~/.fonts/*Fira*Code*"
   register: FiraCode_exists
   ignore_errors: yes
 
@@ -81,3 +81,10 @@
     src: https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/FiraCode.zip
     dest: "~/.fonts/"
     remote_src: yes
+
+- name: Start and enable services
+  ansible.builtin.systemd:
+    state: started
+    name: "{{ item }}"  
+    enabled: yes 
+  with_items:  "{{ services_to_enable }}"     
