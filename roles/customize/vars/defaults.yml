@@ -10,3 +10,9 @@ dconf:
     - {key: '/org/gnome/desktop/interface/font-value', value: "'FiraCode Nerd Font weight=450 11'"}
     - {key: '/org/gnome/desktop/wm/preferences', value: "'FiraCode Nerd Font weight=450 11'"}
     - {key: '/org/gnome/desktop/sound', value: "true"}
+    - {key: '/org/gnome/shell/favorite-apps', value: "'firefox.desktop','terminator.desktop'"}
+    - {key: '/org/gnome/shell/enabled-extensions', value: "'pop-shell@system76.com','dash-to-dock@micxgx.gmail.com'"}
+    - {key: '/org/gnome/extensions/pop-shell/tile-by-default', value: "true"}
+    - {key: '/org/gnome/extensions/pop-shell/gap-innger', value: "uint32 1"}
+    - {key: '/org/gnome/extensions/pop-shell/gap-outer', value: "uint32 1"}
+    - {key: '/org/gnome/extensions/dash-to-dock/dash-max-icon', value: "32"}
