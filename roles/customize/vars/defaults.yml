@@ -26,4 +26,6 @@ dconf:
 
 configs:
     - {src: 'terminator', dest: 'terminator', destname: 'config'}
+    - {src: 'Microsoft.PowerShell_profile.ps1', dest: 'powershell', destname: 'Microsoft.PowerShell_profile.ps1'}
+    - {src: 'pwsh-config.json', dest: 'powershell', destname: 'config.json'}
 
