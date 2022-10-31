@@ -6,7 +6,7 @@ dconf:
     - {key: '/org/gnome/desktop/wm/keybindings/close', value: "['<Super>q']"}
     - {key: '/org/gnome/desktop/wm/keybindings/switch-to-workspace-left', value: "['<Control><Super>Left']"}
     - {key: '/org/gnome/desktop/wm/keybindings/switch-to-workspace-right', value: "['<Control><Super>Right']"}
-    - {key: 'org/gnome/shell/keybindings/toggle-overview', value: "@as []"}
+    - {key: '/org/gnome/shell/keybindings/toggle-overview', value: "@as []"}
     - {key: '/org/gnome/desktop/datetime/automatic-timezone', value: "true"}
     - {key: '/org/gnome/desktop/interface/clock-show-date', value: "true"}
     - {key: '/org/gnome/desktop/interface/clock-format', value: "'12h'"}
@@ -14,10 +14,10 @@ dconf:
     - {key: '/org/gnome/desktop/background/picture-uri-dark', value: "'file:///usr/share/backgrounds/ansible-wallpaper.png'"}
     - {key: '/org/gnome/desktop/interface/color-scheme', value: "'prefer-dark'"}
     - {key: '/org/gnome/desktop/interface/gtk-theme', value: "'Adwaita-dark'"}
-    - {key: '/org/gnome/desktop/interface/document-font-name', value: "'FuraMono NFM 11'"}
-    - {key: '/org/gnome/desktop/interface/monospace-font-name', value: "'FuraMono NFM 11'"}
-    - {key: '/org/gnome/desktop/interface/font-name', value: "'FuraMono NFM 11'"}
-    - {key: '/org/gnome/desktop/wm/preferences/titlebar-font', value: "'FuraMono NFM 11'"}
+    - {key: '/org/gnome/desktop/interface/document-font-name', value: "'FuraMono Nerd Font 11'"}
+    - {key: '/org/gnome/desktop/interface/monospace-font-name', value: "'FuraMono Nerd Font 11'"}
+    - {key: '/org/gnome/desktop/interface/font-name', value: "'FuraMono Nerd Font 11'"}
+    - {key: '/org/gnome/desktop/wm/preferences/titlebar-font', value: "'FuraMono Nerd Font 11'"}
     - {key: '/org/gnome/desktop/sound', value: "true"}
     - {key: '/org/gnome/shell/favorite-apps', value: "['io.gitlab.librewolf-community.desktop','terminator.desktop']"}
     - {key: '/org/gnome/shell/enabled-extensions', value: "['pop-shell@system76.com','dash-to-dock@micxgx.gmail.com']"}
