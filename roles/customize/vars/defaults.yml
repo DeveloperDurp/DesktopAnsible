@@ -1,5 +1,7 @@
 dconf:
     - {key: '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/binding', value: "'<Super>t'"}
+    - {key: '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/command', value: "'terminator'"}
+    - {key: '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/name', value: "'Terminal'"}
     - {key: '/org/gnome/desktop/datetime/automatic-timezone', value: "true"}
     - {key: '/org/gnome/desktop/interface/clock-show-date', value: "true"}
     - {key: '/org/gnome/desktop/interface/clock-format', value: "'12h'"}
@@ -23,6 +25,8 @@ dconf:
     - {key: '/org/gnome/shell/extensions/dash-to-dock/apply-custom-theme', value: "true"}
     - {key: '/org/gnome/shell/extensions/dash-to-dock/multi-monitor', value: "true"}
     - {key: '/org/gnome/desktop/peripherals/touchpad', value: "false"}
+
+
 
 configs:
     - {src: 'terminator', dest: 'terminator', destname: 'config'}
