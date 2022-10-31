@@ -62,7 +62,7 @@
   ansible.builtin.get_url:
     url: https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/posh-linux-amd64
     dest: /usr/local/bin/oh-my-posh
-    mode: '0755+x'
+    mode: 'a+x'
 
 - name: set gui
   shell:
