@@ -26,6 +26,8 @@ required_packages:
     - crontabs
     - wget
     - golang
+    - dnf-plugins-core
+    - brave-browser
     
 
 required_repository:
@@ -33,6 +35,7 @@ required_repository:
     - {baseurl: 'https://packages.microsoft.com/yumrepos/vscode/', name: 'VisualStudioCode', gpgkey: 'https://packages.microsoft.com/keys/microsoft.asc'}
     - {baseurl: 'https://packages.cloud.google.com/yum/repos/kubernetes-el7-x86_64/', name: 'Kubernetes', gpgkey: 'https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg'}
     - {baseurl: 'https://rpm.releases.hashicorp.com/RHEL/8/x86_64/stable/', name: 'Hashicorp', gpgkey: 'https://rpm.releases.hashicorp.com/gpg'}
+    - {baseurl: 'https://brave-browser-rpm-release.s3.brave.com/x86_64/', name: 'Hashicorp', gpgkey: 'https://brave-browser-rpm-release.s3.brave.com/brave-core.asc'}
       
 required_flatpak_packages:
     - io.gitlab.librewolf-community
