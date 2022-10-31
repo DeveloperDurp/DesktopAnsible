@@ -25,6 +25,7 @@ required_packages:
     - unzip
     - crontabs
     - wget
+    - golang
     
 
 required_repository:
