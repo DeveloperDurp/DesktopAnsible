@@ -58,6 +58,12 @@
   with_items:  "{{ required_manual_packages }}"    
   when: required_manual_packages is defined
 
+- name: Manual install files
+  ansible.builtin.get_url:
+    url: https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/posh-linux-amd64
+    dest: /usr/local/bin/oh-my-posh
+    mode: '0755+x'
+
 - name: set gui
   shell:
     cmd: systemctl set-default graphical.target 
