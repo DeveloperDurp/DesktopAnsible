@@ -54,7 +54,6 @@ required_flatpak_packages:
     - org.gnome.calculator
     - org.gnome.baobab
     - org.gnome.firmware
-    - org.gnome.Screenshot
     - org.gnome.eog
     - org.videolan.VLC
 
