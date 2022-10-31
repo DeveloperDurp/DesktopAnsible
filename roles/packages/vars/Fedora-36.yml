@@ -28,6 +28,9 @@ required_packages:
     - golang
     - dnf-plugins-core
     - brave-browser
+    - firmware-manager
+    - system76-acpi-dkms
+    - nodejs-typescript
     
 required_repository:
     - {baseurl: 'https://packages.microsoft.com/rhel/8/prod/', name: 'Microsoft', gpgkey: 'https://packages.microsoft.com/keys/microsoft.asc'}
@@ -61,6 +64,10 @@ required_flatpak_packages:
 
 services_to_enable:
     - touchegg
+    - system76-firmware-daemon
+    - system76-power
+    - system76-power-wake
+    - dkms
 
 fonts: 
     - {url: https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/FiraMono.zip, name: 'Fira*Mono*'}
