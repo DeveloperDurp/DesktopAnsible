@@ -13,6 +13,8 @@ required_packages:
     - azure-cli
     - terminator
     - nautilus
+    - nautilus-actions
+    - nautilus-open-terminal
     - touchegg
     - gnome-tweaks
     - gnome-shell-extension-pop-shell
