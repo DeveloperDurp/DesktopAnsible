@@ -31,6 +31,7 @@ required_packages:
     - firmware-manager
     - system76-acpi-dkms
     - nodejs-typescript
+    - "system76*"
     
 required_repository:
     - {baseurl: 'https://packages.microsoft.com/rhel/8/prod/', name: 'Microsoft', gpgkey: 'https://packages.microsoft.com/keys/microsoft.asc'}
