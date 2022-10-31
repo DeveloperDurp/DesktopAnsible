@@ -1,7 +1,9 @@
 dconf:
+    - {key: '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings', value: "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']"}
     - {key: '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/binding', value: "'<Super>t'"}
     - {key: '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/command', value: "'terminator'"}
     - {key: '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/name', value: "'Terminal'"}
+    - {key: '/org/gnome/desktop/wm/keybindings/close', value: "'<Super>q'"}
     - {key: '/org/gnome/desktop/datetime/automatic-timezone', value: "true"}
     - {key: '/org/gnome/desktop/interface/clock-show-date', value: "true"}
     - {key: '/org/gnome/desktop/interface/clock-format', value: "'12h'"}
@@ -31,5 +33,5 @@ dconf:
 configs:
     - {src: 'terminator', dest: 'terminator', destname: 'config'}
     - {src: 'Microsoft.PowerShell_profile.ps1', dest: 'powershell', destname: 'Microsoft.PowerShell_profile.ps1'}
-    - {src: 'pwsh-config.json', dest: 'powershell', destname: 'config.json'}
+    #- {src: 'pwsh-config.json', dest: 'powershell', destname: 'config.json'}
 
