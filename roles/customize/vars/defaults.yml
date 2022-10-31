@@ -10,7 +10,7 @@ dconf:
     - {key: '/org/gnome/desktop/background/picture-uri', value: "'file:///usr/share/backgrounds/ansible-wallpaper.png'"}
     - {key: '/org/gnome/desktop/background/picture-uri-dark', value: "'file:///usr/share/backgrounds/ansible-wallpaper.png'"}
     - {key: '/org/gnome/desktop/interface/color-scheme', value: "'prefer-dark'"}
-    - {key: '/org/gnome/desktop/interface/gtk-theme', value: "'Pop-dark'"}
+    - {key: '/org/gnome/desktop/interface/gtk-theme', value: "'Adwaita-dark'"}
     - {key: '/org/gnome/desktop/interface/document-font-name', value: "'FuraMono NFM 11'"}
     - {key: '/org/gnome/desktop/interface/monospace-font-name', value: "'FuraMono NFM 11'"}
     - {key: '/org/gnome/desktop/interface/font-name', value: "'FuraMono NFM 11'"}
@@ -27,8 +27,6 @@ dconf:
     - {key: '/org/gnome/shell/extensions/dash-to-dock/apply-custom-theme', value: "true"}
     - {key: '/org/gnome/shell/extensions/dash-to-dock/multi-monitor', value: "true"}
     - {key: '/org/gnome/desktop/peripherals/touchpad', value: "false"}
-
-
 
 configs:
     - {src: 'terminator', dest: 'terminator', destname: 'config'}

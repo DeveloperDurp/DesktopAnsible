@@ -29,7 +29,6 @@ required_packages:
     - dnf-plugins-core
     - brave-browser
     
-
 required_repository:
     - {baseurl: 'https://packages.microsoft.com/rhel/8/prod/', name: 'Microsoft', gpgkey: 'https://packages.microsoft.com/keys/microsoft.asc'}
     - {baseurl: 'https://packages.microsoft.com/yumrepos/vscode/', name: 'VisualStudioCode', gpgkey: 'https://packages.microsoft.com/keys/microsoft.asc'}
@@ -50,7 +49,6 @@ required_flatpak_packages:
     - runtime/org.freedesktop.Platform.VAAPI.Intel/x86_64/22.08
     - runtime/org.freedesktop.Platform.ffmpeg-full/x86_64/22.08
     - runtime/org.freedesktop.Platform.openh264/x86_64/2.3.1
-    - org.gtk.Gtk3theme.Pop-dark
     - org.openshot.OpenShot
     - org.remmina.Remmina
     - org.signal.Signal
