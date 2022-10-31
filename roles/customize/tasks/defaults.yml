@@ -88,7 +88,7 @@
 - name: Copy Config files
   become_user: user
   copy:
-    src: "templates/{{ item.src }}"
+    src: "files/{{ item.src }}"
     dest: "~/.config/{{ item.dest }}/{{ item.destname }}"
     owner: "user"
     force: yes  
