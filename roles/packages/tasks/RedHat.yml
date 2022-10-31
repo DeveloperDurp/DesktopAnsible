@@ -1,3 +1,8 @@
+- name: Enable copr
+  community.general.copr:
+    state: enabled
+    name: szydell/system76
+
 - name: Add repository
   ansible.builtin.yum_repository:
     name: "{{ item.name }}"
@@ -22,11 +27,6 @@
     autoremove: yes   
   retries: 3
   delay: 10
-
-- name: Enable copr
-  community.general.copr:
-    state: enabled
-    name: szydell/system76
 
 - name: Install required packages
   yum: 
