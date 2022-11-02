@@ -8,6 +8,10 @@
     },
     {
       "class": "org.gnome.Nautilus"
+    },
+    {
+      "class": "terminator",
+      "title": "Terminator Preferences"
     }
   ],
   "skiptaskbarhidden": [],
