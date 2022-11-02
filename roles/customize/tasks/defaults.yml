@@ -28,7 +28,7 @@
 - name: "Create a default ZSH configuration"
   become_user: user
   template:
-    src: templates/zshrc
+    src: files/zshrc
     dest: "~/.zshrc"
     owner: "user"
     force: yes

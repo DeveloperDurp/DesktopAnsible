@@ -44,4 +44,5 @@ configs:
     - {src: 'Microsoft.PowerShell_profile.ps1', dest: 'powershell', destname: 'Microsoft.PowerShell_profile.ps1'}
     - {src: 'pwsh-config.json', dest: 'powershell', destname: 'config.json'}
     - {src: 'popshell-config.json', dest: 'pop-shell', destname: 'config.json'}
+    - {src: 'code-settings.json', dest: 'Code/User', destname: 'settings.json'}
 

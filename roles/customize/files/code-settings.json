@@ -1,0 +1,22 @@
+{
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "redhat.telemetry.enabled": false,
+    "workbench.startupEditor": "none",
+    "explorer.confirmDragAndDrop": false,
+    "window.restoreWindows": "none",
+    "github.gitAuthentication": false,
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "editor.fontFamily": "FiraCode Nerd Font Mono Medium",
+    "terminal.integrated.fontFamily": "FiraMono Nerd Font Mono",
+    "terminal.integrated.scrollback": -1,
+    "vs-kubernetes": {
+        "vscode-kubernetes.minikube-path.linux": "/home/user/.local/state/vs-kubernetes/tools/minikube/linux-amd64/minikube"
+    },
+    "workbench.editor.untitled.hint": "hidden",
+    "terminal.integrated.defaultProfile.osx": "",
+    "editor.fontSize": 15
+}   
