@@ -101,3 +101,14 @@
     name: "{{ item }}"  
     enabled: yes 
   with_items:  "{{ services_to_enable }}"     
+
+- name: Mask power profiles
+  ansible.builtin.systemd:
+    masked: yes
+    name: power-profiles-daemon  
+
+- name: Add user to adm group
+  ansible.builtin.user:
+    name: user
+    groups: adm
+    append: yes    

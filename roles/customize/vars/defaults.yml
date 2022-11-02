@@ -20,7 +20,7 @@ dconf:
     #- {key: '/org/gnome/desktop/wm/preferences/titlebar-font', value: "'FuraMono Nerd Font 11'"}
     - {key: '/org/gnome/desktop/sound', value: "true"}
     - {key: '/org/gnome/shell/favorite-apps', value: "['io.gitlab.librewolf-community.desktop','terminator.desktop']"}
-    - {key: '/org/gnome/shell/enabled-extensions', value: "['pop-shell@system76.com','dash-to-dock@micxgx.gmail.com']"}
+    - {key: '/org/gnome/shell/enabled-extensions', value: "['pop-shell@system76.com','dash-to-dock@micxgx.gmail.com', 'system76-power@system76.com']"}
     - {key: '/org/gnome/shell/extensions/pop-shell/tile-by-default', value: "true"}
     - {key: '/org/gnome/shell/extensions/pop-shell/gap-inner', value: "uint32 1"}
     - {key: '/org/gnome/shell/extensions/pop-shell/gap-outer', value: "uint32 1"}
