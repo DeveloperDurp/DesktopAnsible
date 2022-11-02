@@ -14,10 +14,10 @@ dconf:
     - {key: '/org/gnome/desktop/background/picture-uri-dark', value: "'file:///usr/share/backgrounds/ansible-wallpaper.png'"}
     - {key: '/org/gnome/desktop/interface/color-scheme', value: "'prefer-dark'"}
     - {key: '/org/gnome/desktop/interface/gtk-theme', value: "'Adwaita-dark'"}
-    - {key: '/org/gnome/desktop/interface/document-font-name', value: "'FuraMono Nerd Font 11'"}
-    - {key: '/org/gnome/desktop/interface/monospace-font-name', value: "'FuraMono Nerd Font 11'"}
-    - {key: '/org/gnome/desktop/interface/font-name', value: "'FuraMono Nerd Font 11'"}
-    - {key: '/org/gnome/desktop/wm/preferences/titlebar-font', value: "'FuraMono Nerd Font 11'"}
+    #- {key: '/org/gnome/desktop/interface/document-font-name', value: "'FuraMono Nerd Font 11'"}
+    #- {key: '/org/gnome/desktop/interface/monospace-font-name', value: "'FuraMono Nerd Font 11'"}
+    #- {key: '/org/gnome/desktop/interface/font-name', value: "'FuraMono Nerd Font 11'"}
+    #- {key: '/org/gnome/desktop/wm/preferences/titlebar-font', value: "'FuraMono Nerd Font 11'"}
     - {key: '/org/gnome/desktop/sound', value: "true"}
     - {key: '/org/gnome/shell/favorite-apps', value: "['io.gitlab.librewolf-community.desktop','terminator.desktop']"}
     - {key: '/org/gnome/shell/enabled-extensions', value: "['pop-shell@system76.com','dash-to-dock@micxgx.gmail.com']"}
