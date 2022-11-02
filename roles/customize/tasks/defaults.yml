@@ -104,3 +104,18 @@
   ansible.builtin.systemd:
     masked: yes
     name: power-profiles-daemon    
+
+- name: download s76 gnome extension
+  ansible.builtin.git:
+    repo: https://github.com/pop-os/gnome-shell-extension-system76-power.git
+    dest: /tmp/s76-power
+    single_branch: yes
+
+- name: Build s76 gnome extension
+  community.general.make:
+    chdir: /tmp/s76-power
+
+- name: Run 'install' s76 gnome extension
+  community.general.make:
+    chdir: /tmp/s76-power
+    target: install       

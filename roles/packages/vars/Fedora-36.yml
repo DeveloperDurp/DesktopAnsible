@@ -74,6 +74,7 @@ services_to_enable:
     #- system76-power
     #- system76-power-wake
     - dkms
+    - com.system76.PowerDaemon.service
 
 fonts: 
     - {url: https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/FiraMono.zip, name: 'Fira*Mono*'}
