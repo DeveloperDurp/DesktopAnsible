@@ -78,16 +78,15 @@ services_to_enable:
     #- system76-power-wake
     - dkms
     - com.system76.PowerDaemon.service
+    - libvirtd.service
 
 fonts: 
     - {url: https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/FiraMono.zip, name: 'Fira*Mono*'}
     - {url: https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/FiraCode.zip, name: 'Fira*Code*'}
 
-
-group_to_add:
+groups_to_add:
     - adm
     - libvirt
-    - libvirt-qemu
     - kvm
     - input
     - disk    

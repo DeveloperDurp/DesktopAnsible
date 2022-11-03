@@ -22,7 +22,7 @@
   retries: 3
   delay: 10  
 
-- name: Remove packates not needed anymore
+- name: Remove packages not needed anymore
   yum:
     autoremove: yes   
   retries: 3
@@ -112,5 +112,7 @@
     name: user
     groups: "{{ item }}"  
     append: yes    
-with_items:  "{{ groups_to_add }}"       
+  with_items:  "{{ groups_to_add }}"       
 
+- name: Update sleep mode
+  shell: 'grubby --args="mem_sleep_default=shallow" --update-kernel=ALL'
