@@ -36,6 +36,9 @@ required_packages:
     - system76-driver
     - system76-firmware
     - system76-keyboard-configurator
+    - libvirt-daemon
+    - qemu-kvm 
+    - virt-manager
     
 required_repository:
     - {baseurl: 'https://packages.microsoft.com/rhel/8/prod/', name: 'Microsoft', gpgkey: 'https://packages.microsoft.com/keys/microsoft.asc'}
