@@ -107,8 +107,10 @@
     masked: yes
     name: power-profiles-daemon  
 
-- name: Add user to adm group
+- name: Add user to groups
   ansible.builtin.user:
     name: user
-    groups: adm
+    groups: "{{ item }}"  
     append: yes    
+with_items:  "{{ groups_to_add }}"       
+
