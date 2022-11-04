@@ -116,3 +116,12 @@
 
 - name: Update sleep mode
   shell: 'grubby --args="mem_sleep_default=shallow" --update-kernel=ALL'
+
+- name: Set bluetooth script
+  become_user: user
+  copy:
+    src: "files/bluetooth"
+    dest: "/lib/systemd/system-sleep/bluetooth-suspend"
+    owner: "root"
+    force: yes  
+    mode: 'a+x'

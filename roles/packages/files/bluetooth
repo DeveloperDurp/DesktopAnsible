@@ -1,0 +1,6 @@
+#!/bin/bash
+if [[ $1 = pre ]]; then
+    btmgmt power off
+elif [[ $1 = post ]]; then
+    btmgmt power on
+fi
