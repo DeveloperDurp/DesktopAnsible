@@ -14,6 +14,7 @@ I have had the best results to run the code locally first
 ``` bash
 git clone https://github.com/DeveloperDurp/DesktopAnsible.git
 cd DesktopAnsible
+sudo ansible-galaxy install -f requirements.yml
 sudo ansible-playbook local.yml
 ```
 
