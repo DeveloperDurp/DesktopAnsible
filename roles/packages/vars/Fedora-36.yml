@@ -39,6 +39,7 @@ required_packages:
     - libvirt-daemon
     - qemu-kvm 
     - virt-manager
+    - firewall-config
     
 required_repository:
     - {baseurl: 'https://packages.microsoft.com/rhel/8/prod/', name: 'Microsoft', gpgkey: 'https://packages.microsoft.com/keys/microsoft.asc'}
@@ -90,3 +91,8 @@ groups_to_add:
     - kvm
     - input
     - disk    
+
+firewall_to_disable:
+    - ssh
+    - mdns
+    - dhcpv6-client

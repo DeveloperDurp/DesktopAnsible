@@ -125,3 +125,10 @@
 #    owner: "root"
 #    force: yes  
 #    mode: 'a+x'
+
+- ansible.posix.firewalld:
+    zone: public
+    service: "{{ item }}" 
+    permanent: yes
+    state: disabled
+  with_items:  "{{ firewall_to_disable }}"       
