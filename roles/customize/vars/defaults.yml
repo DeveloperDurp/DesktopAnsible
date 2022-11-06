@@ -6,6 +6,8 @@ dconf:
     - {key: '/org/gnome/desktop/wm/keybindings/close', value: "['<Alt>F4']"}
     - {key: '/org/gnome/desktop/wm/keybindings/switch-to-workspace-left', value: "['<Control><Super>Left']"}
     - {key: '/org/gnome/desktop/wm/keybindings/switch-to-workspace-right', value: "['<Control><Super>Right']"}
+    - {key: '/org/gnome/desktop/wm/keybindings/move-to-workspace-left', value: "['<Alt><Super>Left']"}
+    - {key: '/org/gnome/desktop/wm/keybindings/move-to-workspace-right', value: "['<Alt><Super>Right']"}
     - {key: '/org/gnome/shell/keybindings/toggle-overview', value: "@as []"}
     - {key: '/org/gnome/desktop/datetime/automatic-timezone', value: "true"}
     - {key: '/org/gnome/desktop/interface/clock-show-date', value: "true"}

@@ -115,13 +115,13 @@
   with_items:  "{{ groups_to_add }}"       
 
 - name: Update sleep mode
-  shell: 'grubby --args="mem_sleep_default=shallow" --update-kernel=ALL'
+  shell: 'grubby --args="mem_sleep_default=s2idle" --update-kernel=ALL'
 
-- name: Set bluetooth script
-  become_user: user
-  copy:
-    src: "files/bluetooth"
-    dest: "/lib/systemd/system-sleep/bluetooth-suspend"
-    owner: "root"
-    force: yes  
-    mode: 'a+x'
+#- name: Set bluetooth script
+#  become_user: user
+#  copy:
+#    src: "files/bluetooth"
+#    dest: "/lib/systemd/system-sleep/bluetooth-suspend"
+#    owner: "root"
+#    force: yes  
+#    mode: 'a+x'
