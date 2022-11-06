@@ -57,7 +57,7 @@
 
 - name: Manual install packages
   ansible.builtin.yum:
-    name: "{{ item.url }}"
+    name: "{{ item }}"
     state: present
     disable_gpg_check: yes
   with_items:  "{{ required_manual_packages }}"    

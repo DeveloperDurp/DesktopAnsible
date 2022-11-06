@@ -40,7 +40,7 @@ required_packages:
     - qemu-kvm 
     - virt-manager
     - firewall-config
-    
+
 required_repository:
     - {baseurl: 'https://packages.microsoft.com/rhel/8/prod/', name: 'Microsoft', gpgkey: 'https://packages.microsoft.com/keys/microsoft.asc'}
     - {baseurl: 'https://packages.microsoft.com/yumrepos/vscode/', name: 'VisualStudioCode', gpgkey: 'https://packages.microsoft.com/keys/microsoft.asc'}
@@ -96,3 +96,6 @@ firewall_to_disable:
     - ssh
     - mdns
     - dhcpv6-client
+
+required_manual_packages:
+    - https://github.com/peazip/PeaZip/releases/download/7.7.0/peazip-7.7.0.LINUX.GTK2-1.x86_64.rpm
