@@ -7,9 +7,6 @@
       "class": "gnome-control-center"
     },
     {
-      "class": "org.gnome.Nautilus"
-    },
-    {
       "class": "terminator",
       "title": "Terminator Preferences"
     }
