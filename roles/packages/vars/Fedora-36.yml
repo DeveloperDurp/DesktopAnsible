@@ -40,6 +40,8 @@ required_packages:
     - qemu-kvm 
     - virt-manager
     - firewall-config
+    - gvfs-smb
+    - samba-client
 
 required_repository:
     - {baseurl: 'https://packages.microsoft.com/rhel/8/prod/', name: 'Microsoft', gpgkey: 'https://packages.microsoft.com/keys/microsoft.asc'}
