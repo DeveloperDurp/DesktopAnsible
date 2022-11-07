@@ -42,6 +42,12 @@ required_packages:
     - firewall-config
     - gvfs-smb
     - samba-client
+    - rust
+    - cargo
+    - neovim
+    - glibc-static 
+    - libstdc++-static 
+    - gcc-c++
 
 required_repository:
     - {baseurl: 'https://packages.microsoft.com/rhel/8/prod/', name: 'Microsoft', gpgkey: 'https://packages.microsoft.com/keys/microsoft.asc'}
