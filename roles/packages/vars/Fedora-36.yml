@@ -48,6 +48,7 @@ required_packages:
     - glibc-static 
     - libstdc++-static 
     - gcc-c++
+    - libreoffice
 
 required_repository:
     - {baseurl: 'https://packages.microsoft.com/rhel/8/prod/', name: 'Microsoft', gpgkey: 'https://packages.microsoft.com/keys/microsoft.asc'}
