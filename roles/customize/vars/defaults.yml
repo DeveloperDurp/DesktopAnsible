@@ -40,7 +40,7 @@ dconf:
     - {key: '/org/gnome/desktop/peripherals/touchpad/natural-scroll', value: "false"}
     - {key: '/org/gnome/desktop/peripherals/touchpad/tap-to-click', value: "true"}
     - {key: '/org/gnome/desktop/peripherals/touchpad/two-finger-scrolling-enabled', value: "true"}
-    - {key: '/org/gnome/desktop/notifications/application/gnome-power-panel/application-id', value: "gnome-power-panel.desktop"}
+      # - {key: '/org/gnome/desktop/notifications/application/gnome-power-panel/application-id', value: "gnome-power-panel.desktop"}
     - {key: '/org/gnome/desktop/notifications/application/gnome-power-panel/enable', value: "false"}
 
 configs:
