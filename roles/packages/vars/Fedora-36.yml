@@ -50,6 +50,7 @@ required_packages:
     - gcc-c++
     - libreoffice
     - nmap
+    - whois
 
 required_repository:
     - {baseurl: 'https://nexus.durp.info/repository/Microsoft/', name: 'Microsoft', gpgkey: 'https://nexus.durp.info/repository/keys/yum/nexus.asc'}
