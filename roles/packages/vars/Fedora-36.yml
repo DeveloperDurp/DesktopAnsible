@@ -54,6 +54,7 @@ required_packages:
     - openvpn
     - NetworkManager-openvpn-gnome
     - pciutils
+    - gimp
 
 required_repository:
     - {baseurl: 'https://nexus.durp.info/repository/Microsoft/', name: 'Microsoft', gpgkey: 'https://nexus.durp.info/repository/keys/yum/nexus.asc'}
