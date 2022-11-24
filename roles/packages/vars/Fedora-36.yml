@@ -53,6 +53,7 @@ required_packages:
     - whois
     - openvpn
     - NetworkManager-openvpn-gnome
+    - pciutils
 
 required_repository:
     - {baseurl: 'https://nexus.durp.info/repository/Microsoft/', name: 'Microsoft', gpgkey: 'https://nexus.durp.info/repository/keys/yum/nexus.asc'}
