@@ -64,7 +64,7 @@ required_repository:
     - {baseurl: 'https://nexus.durp.info/repository/Kubernetes/', name: 'Kubernetes', gpgkey: 'https://nexus.durp.info/repository/keys/yum/nexus.asc'}
     - {baseurl: 'https://nexus.durp.info/repository/Hashicorp/', name: 'Hashicorp', gpgkey: 'https://nexus.durp.info/repository/keys/yum/nexus.asc'}
     - {baseurl: 'https://nexus.durp.info/repository/Brave/', name: 'Brave', gpgkey: 'https://rpm.releases.hashicorp.com/gpg'}
-    - {baseurl: 'https://nexus.durp.info/repository/Atom/', name: 'Brave', gpgkey: 'https://rpm.releases.hashicorp.com/gpg'}
+    - {baseurl: 'https://nexus.durp.info/repository/Atom/', name: 'Atom', gpgkey: 'https://rpm.releases.hashicorp.com/gpg'}
       
 required_flatpak_packages:
     - io.gitlab.librewolf-community
