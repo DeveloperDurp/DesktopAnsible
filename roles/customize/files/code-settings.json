@@ -10,8 +10,8 @@
     "window.restoreWindows": "none",
     "github.gitAuthentication": false,
     "terminal.integrated.defaultProfile.linux": "zsh",
-    "editor.fontFamily": "FiraCode Nerd Font Mono Medium",
-    "terminal.integrated.fontFamily": "monospace",
+    "editor.fontFamily": "FiraCode Nerd Font",
+    "terminal.integrated.fontFamily": "FiraCode Nerd Font",
     "terminal.integrated.scrollback": -1,
     "vs-kubernetes": {
         "vscode-kubernetes.minikube-path.linux": "/home/user/.local/state/vs-kubernetes/tools/minikube/linux-amd64/minikube"
