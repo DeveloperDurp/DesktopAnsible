@@ -61,7 +61,7 @@
   
 - user:
     name: "user"
-    shell: /bin/zsh
+    shell: /opt/microsoft/powershell/7/pwsh
 
 - name: Create bin folder
   become_user: user
