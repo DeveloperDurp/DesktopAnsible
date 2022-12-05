@@ -116,5 +116,3 @@ firewall_to_disable:
     - mdns
     - dhcpv6-client
 
-required_manual_packages:
-    - https://github.com/peazip/PeaZip/releases/download/7.7.0/peazip-7.7.0.LINUX.GTK2-1.x86_64.rpm
