@@ -89,7 +89,6 @@ required_flatpak_packages:
     - org.gnome.eog
     - org.videolan.VLC
     - com.github.joseexposito.touche
-    - io.atom.Atom
 
 services_to_enable:
     - touchegg
