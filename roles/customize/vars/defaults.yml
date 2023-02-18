@@ -42,6 +42,7 @@ dconf:
     - {key: '/org/gnome/desktop/peripherals/touchpad/two-finger-scrolling-enabled', value: "true"}
       # - {key: '/org/gnome/desktop/notifications/application/gnome-power-panel/application-id', value: "gnome-power-panel.desktop"}
     - {key: '/org/gnome/desktop/notifications/application/gnome-power-panel/enable', value: "false"}
+    - {key: 'org.gnome.desktop.wm.preferences button-layout', value "minimize,close"}
 
 configs:
     - {src: 'terminator', dest: 'terminator', destname: 'config'}
