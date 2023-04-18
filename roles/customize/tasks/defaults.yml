@@ -20,12 +20,12 @@
     chdir: /tmp/s76-power
     target: install       
 
-#- name: set gnome config
-#  become_user: user
-#  dconf:
-#    key: "{{ item.key }}"
-#    value: "{{ item.value }}"
-#  with_items:  "{{ dconf }}"      
+- name: set gnome config
+  become_user: user
+  dconf:
+    key: "{{ item.key }}"
+    value: "{{ item.value }}"
+  with_items:  "{{ dconf }}"      
 
 - name: Check that Oh My ZSH is installed
   become_user: user 
@@ -61,7 +61,7 @@
   
 - user:
     name: "user"
-    shell: /opt/microsoft/powershell/7/pwsh
+    shell: /usr/bin/zsh
 
 - name: Create bin folder
   become_user: user

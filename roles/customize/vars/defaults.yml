@@ -21,7 +21,7 @@ dconf:
     #- {key: '/org/gnome/desktop/interface/font-name', value: "'FuraMono Nerd Font 11'"}
     #- {key: '/org/gnome/desktop/wm/preferences/titlebar-font', value: "'FuraMono Nerd Font 11'"}
     - {key: '/org/gnome/desktop/sound', value: "true"}
-    - {key: '/org/gnome/shell/favorite-apps', value: "['io.gitlab.librewolf-community.desktop','terminator.desktop']"}
+    - {key: '/org/gnome/shell/favorite-apps', value: "['io.gitlab.librewolf-community.desktop', 'brave-browser.desktop', 'terminator.desktop', 'org.gnome.Nautilus.desktop']"}
     - {key: '/org/gnome/shell/enabled-extensions', value: "['pop-shell@system76.com','dash-to-dock@micxgx.gmail.com', 'system76-power@system76.com']"}
     - {key: '/org/gnome/shell/extensions/pop-shell/tile-by-default', value: "true"}
     - {key: '/org/gnome/shell/extensions/pop-shell/gap-inner', value: "uint32 1"}
@@ -42,7 +42,7 @@ dconf:
     - {key: '/org/gnome/desktop/peripherals/touchpad/two-finger-scrolling-enabled', value: "true"}
       # - {key: '/org/gnome/desktop/notifications/application/gnome-power-panel/application-id', value: "gnome-power-panel.desktop"}
     - {key: '/org/gnome/desktop/notifications/application/gnome-power-panel/enable', value: "false"}
-    - {key: 'org.gnome.desktop.wm.preferences button-layout', value "minimize,close"}
+    #- {key: 'org.gnome.desktop.wm.preferences button-layout', value 'minimize,close'}
 
 configs:
     - {src: 'terminator', dest: 'terminator', destname: 'config'}
