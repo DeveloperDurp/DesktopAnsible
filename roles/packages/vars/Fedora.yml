@@ -59,12 +59,11 @@ required_packages:
     - ark
 
 required_repository:
-    - {baseurl: 'https://nexus.durp.info/repository/Microsoft/', name: 'Microsoft', gpgkey: 'https://nexus.durp.info/repository/keys/yum/nexus.asc'}
-    - {baseurl: 'https://nexus.durp.info/repository/VisualStudioCode/', name: 'VisualStudioCode', gpgkey: 'https://nexus.durp.info/repository/keys/yum/nexus.asc'}
-    - {baseurl: 'https://nexus.durp.info/repository/Kubernetes/', name: 'Kubernetes', gpgkey: 'https://nexus.durp.info/repository/keys/yum/nexus.asc'}
-    - {baseurl: 'https://nexus.durp.info/repository/Hashicorp/', name: 'Hashicorp', gpgkey: 'https://nexus.durp.info/repository/keys/yum/nexus.asc'}
-    - {baseurl: 'https://nexus.durp.info/repository/Brave/', name: 'Brave', gpgkey: 'https://nexus.durp.info/repository/keys/yum/nexus.asc'}
-    - {baseurl: 'https://nexus.durp.info/repository/Atom/', name: 'Atom', gpgkey: 'https://nexus.durp.info/repository/keys/yum/nexus.asc'}
+    - {baseurl: 'https://packages.microsoft.com/rhel/8/prod/', name: 'Microsoft', gpgkey: 'https://packages.microsoft.com/keys/microsoft.asc'}
+    - {baseurl: 'https://packages.microsoft.com/yumrepos/vscode/', name: 'VisualStudioCode', gpgkey: 'https://packages.microsoft.com/keys/microsoft.asc'}
+    - {baseurl: 'https://packages.cloud.google.com/yum/repos/kubernetes-el7-x86_64/', name: 'Kubernetes', gpgkey: 'https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg'}
+    - {baseurl: 'https://rpm.releases.hashicorp.com/RHEL/8/x86_64/stable/', name: 'Hashicorp', gpgkey: 'https://rpm.releases.hashicorp.com/gpg'}
+    - {baseurl: 'https://brave-browser-rpm-release.s3.brave.com/x86_64/', name: 'Hashicorp', gpgkey: 'https://brave-browser-rpm-release.s3.brave.com/brave-core.asc'}
       
 required_flatpak_packages:
     - io.gitlab.librewolf-community
