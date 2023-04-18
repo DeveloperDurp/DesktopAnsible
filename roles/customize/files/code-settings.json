@@ -13,10 +13,9 @@
     "editor.fontFamily": "FiraCode Nerd Font",
     "terminal.integrated.fontFamily": "FiraCode Nerd Font",
     "terminal.integrated.scrollback": -1,
-    "vs-kubernetes": {
-        "vscode-kubernetes.minikube-path.linux": "/home/user/.local/state/vs-kubernetes/tools/minikube/linux-amd64/minikube"
-    },
     "workbench.editor.untitled.hint": "hidden",
     "terminal.integrated.defaultProfile.osx": "",
-    "editor.fontSize": 15
+    "editor.fontSize": 15,
+    "go.toolsManagement.autoUpdate": true,
+    "workbench.editor.enablePreview": false
 }   
