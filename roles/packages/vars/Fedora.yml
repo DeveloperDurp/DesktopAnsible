@@ -3,7 +3,6 @@ required_packages:
     - powershell
     - git
     - zsh
-    - dotnet-sdk-3.1
     - dotnet-sdk-6.0
     - powershell
     - kubectl
