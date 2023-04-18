@@ -81,9 +81,9 @@ required_flatpak_packages:
     - org.remmina.Remmina
     - org.signal.Signal
     - org.gnome.Extensions
-    - org.gnome.calculator
+    - org.gnome.Calculator
     - org.gnome.baobab
-    - org.gnome.firmware
+    - org.gnome.Firmware
     - org.gnome.eog
     - org.videolan.VLC
     - com.github.joseexposito.touche
