@@ -58,11 +58,12 @@ required_packages:
     - ark
 
 required_repository:
-    - {baseurl: 'https://packages.microsoft.com/rhel/8/prod/', name: 'Microsoft', gpgkey: 'https://packages.microsoft.com/keys/microsoft.asc'}
-    - {baseurl: 'https://packages.cloud.google.com/yum/repos/kubernetes-el7-x86_64/', name: 'Kubernetes', gpgkey: 'https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg'}
-    - {baseurl: 'https://rpm.releases.hashicorp.com/RHEL/8/x86_64/stable/', name: 'Hashicorp', gpgkey: 'https://rpm.releases.hashicorp.com/gpg'}
-    - {baseurl: 'https://brave-browser-rpm-release.s3.brave.com/x86_64/', name: 'Brave', gpgkey: 'https://brave-browser-rpm-release.s3.brave.com/brave-core.asc'}
-    - {baseurl: 'https://download.vscodium.com/rpms/', name: 'VSCodium', gpgkey: 'https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/-/raw/master/pub.gpg'}
+    - {baseurl: 'https://nexus.durp.info/repository/DurpRepo/', name: 'DurpRepo'}
+    #- {baseurl: 'https://packages.microsoft.com/rhel/8/prod/', name: 'Microsoft', gpgkey: 'https://packages.microsoft.com/keys/microsoft.asc'}
+    #- {baseurl: 'https://packages.cloud.google.com/yum/repos/kubernetes-el7-x86_64/', name: 'Kubernetes', gpgkey: 'https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg'}
+    #- {baseurl: 'https://rpm.releases.hashicorp.com/RHEL/8/x86_64/stable/', name: 'Hashicorp', gpgkey: 'https://rpm.releases.hashicorp.com/gpg'}
+    #- {baseurl: 'https://brave-browser-rpm-release.s3.brave.com/x86_64/', name: 'Brave', gpgkey: 'https://brave-browser-rpm-release.s3.brave.com/brave-core.asc'}
+    #- {baseurl: 'https://download.vscodium.com/rpms/', name: 'VSCodium', gpgkey: 'https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/-/raw/master/pub.gpg'}
       
 required_flatpak_packages:
     - io.gitlab.librewolf-community
