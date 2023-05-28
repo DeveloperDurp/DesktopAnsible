@@ -9,6 +9,7 @@
     description: "Ansible repositories"
     baseurl: "{{ item.baseurl }}"
     async: yes
+    gpgcheck: false
     #gpgkey: "{{ item.gpgkey }}"
   with_items:  "{{ required_repository }}"  
   when: required_repository is defined   
