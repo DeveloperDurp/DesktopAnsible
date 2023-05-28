@@ -55,6 +55,7 @@
     name: "{{ item }}"
   with_items:  "{{ required_flatpak_packages }}"     
   when: required_flatpak_packages is defined
+  ignore_errors: yes
 
 - name: Manual install packages
   ansible.builtin.yum:
