@@ -1,0 +1,60 @@
+- name: add apt repository key
+  apt_key:
+    url: "{{ item }}"
+  with_items: "{{ apt_keys }}"
+  become: yes
+
+- name: add apt repository
+  apt_repository:
+    repo: "{{ item }}"
+  with_items: "{{ apt_repo }}"
+  become: yes
+
+- name: Upgrade Packages
+  package:
+    update_cache: yes
+    upgrade: safe 
+  become: yes
+
+- name: Install Packages
+  apt:
+    state: latest
+    update_cache: yes
+    pkg: "{{ required_packages }}"
+  become: yes
+
+- name: ensure fonts directory
+  become_user: user
+  file:
+    path: "~/.fonts"
+    state: directory
+
+- name: FiraCode exists
+  become_user: user
+  shell: "ls ~/.fonts/*{{ item.name }}*"
+  register: FiraCode_exists
+  ignore_errors: yes
+  with_items:  "{{ fonts }}"   
+
+- name: Download FiraCode
+  when: FiraCode_exists is failed
+  become_user: user
+  ansible.builtin.unarchive:
+    src: "{{ item.url }}" 
+    dest: "~/.fonts/"
+    remote_src: yes
+  with_items:  "{{ fonts }}"     
+
+- name: Start and enable services
+  ansible.builtin.systemd:
+    state: started
+    name: "{{ item }}"  
+    enabled: yes 
+  with_items:  "{{ services_to_enable }}"     
+
+- name: Add user to groups
+  ansible.builtin.user:
+    name: user
+    groups: "{{ item }}"  
+    append: yes    
+  with_items:  "{{ groups_to_add }}"       

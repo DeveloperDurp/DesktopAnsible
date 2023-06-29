@@ -1,0 +1,32 @@
+
+required_packages:
+  - ansible
+
+      
+required_flatpak_packages:
+    - io.gitlab.librewolf-community
+    - com.bitwarden.desktop
+    - com.discordapp.Discord 
+    - com.makemkv.MakeMKV
+    - org.chromium.Chromium
+    - org.chromium.Chromium.Codecs
+    - org.remmina.Remmina
+    - org.signal.Signal
+    - org.videolan.VLC
+
+services_to_enable:
+    - libvirtd.service
+
+fonts: 
+    - {url: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/FiraMono.zip, name: 'Fira*Mono*'}
+    - {url: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/Go-Mono.zip, name: 'GoMonoNerdFont-*'}
+    - {url: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/FiraCode.zip, name: 'Fira*Code*'}
+
+groups_to_add:
+    - adm
+    - libvirt
+    - kvm
+    - input
+    - disk    
+
+
