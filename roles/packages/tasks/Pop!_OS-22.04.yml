@@ -10,6 +10,7 @@
     update_cache: yes
     pkg: "{{ required_packages }}"
   become: yes
+  when: required_packages is defined   
 
 - name: ensure fonts directory
   become_user: user
