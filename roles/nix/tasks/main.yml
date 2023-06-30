@@ -8,7 +8,7 @@
   register: nix_version_output
 - name: Set nix version name
   set_fact:
-    nix_version_on_system: "{{ (nix_version_output.stdout_lines[0] | cut -d' ' -f3)"
+    nix_version_on_system: "{{ (nix_version_output.stdout_lines[0] | cut -d' ' -f3) }}"
   when: nix_version_output.rc == 0
 - name: Download and run installer
   block:
