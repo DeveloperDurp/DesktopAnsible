@@ -34,6 +34,16 @@
     remote_src: yes
   with_items:  "{{ fonts }}"     
 
+- name: Enable wayland 
+  shell: sed -i 's/WaylandEnable=false/WaylandEnable=true/' /etc/gdm3/custom.conf
+
+- name: download Nvim
+  ansible.builtin.get_url:
+    url: "https://github.com/neovim/neovim/releases/download/{{ nvim_version }}/nvim.appimage"
+    dest: /usr/bin/nvim.appimage
+    mode: '0755'
+    checksum: sha256:https://github.com/neovim/neovim/releases/download/{{ nvim_version }}/nvim.appimage.sha256sum
+
 - name: Start and enable services
   ansible.builtin.systemd:
     state: started

@@ -1,6 +1,7 @@
 
 required_packages:
   - ansible
+  - libfuse2
 
       
 required_flatpak_packages:
