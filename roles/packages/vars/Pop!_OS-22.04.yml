@@ -2,7 +2,25 @@
 required_packages:
   - ansible
   - libfuse2
+  - git
+  - zsh
+  - nfs-common
+  - powershell
+  - kubectl
+  - terraform
+  - helm
+  - htop
 
+apt_keys:
+  - https://packages.cloud.google.com/apt/doc/apt-key.gpg
+  - https://apt.releases.hashicorp.com/gpg
+  - https://baltocdn.com/helm/signing.asc
+  - https://packages.microsoft.com/keys/microsoft.asc
+apt_repo:
+  - deb https://apt.kubernetes.io/ kubernetes-xenial main
+  - deb [arch=amd64] https://apt.releases.hashicorp.com jammy main
+  - deb https://baltocdn.com/helm/stable/debian/ all main
+  - deb [arch=amd64] https://packages.microsoft.com/ubuntu/22.04/prod jammy main
       
 required_flatpak_packages:
     - io.gitlab.librewolf-community
