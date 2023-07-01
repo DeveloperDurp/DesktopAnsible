@@ -1,4 +1,4 @@
-- name: Upgrade Package- name: add apt repository key
+- name: add apt repository key
   apt_key:
     url: "{{ item }}"
   with_items: "{{ apt_keys }}"
@@ -9,7 +9,8 @@
     repo: "{{ item }}"
   with_items: "{{ apt_repo }}"
   become: yes
-s
+
+- name: Upgrade Packages
   package:
     update_cache: yes
     upgrade: safe 
