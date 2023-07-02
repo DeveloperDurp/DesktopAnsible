@@ -45,6 +45,11 @@
   shell: git clone https://github.com/DeveloperDurp/dotfiles.git ~/.dotfiles
   when: dotfiles.stat.exists == false
 
+- name: run stow
+  become_user: user
+  shell: "stow -t $HOME -v {{ item }}"
+  with_items:  "{{ stowdir }}"   
+
 - name: Check that Oh My ZSH is installed
   become_user: user 
   stat:

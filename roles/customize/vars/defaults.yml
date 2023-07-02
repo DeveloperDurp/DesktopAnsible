@@ -51,3 +51,10 @@ configs:
     - {src: 'popshell-config.json', dest: 'pop-shell', destname: 'config.json'}
     - {src: 'code-settings.json', dest: 'VSCodium/User', destname: 'settings.json'}
 
+stowdir:
+  - "codium"
+  - "nvim" 
+  - "powershell"
+  - "tmux"
+  - "terminator"
+  - "zsh"
