@@ -5,5 +5,5 @@
 
   roles:
     - packages
-      #    - customize
+    - customize
       #    - ansibleuser

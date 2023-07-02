@@ -1,3 +1,25 @@
+- name: check if nvchad is installed
+  become_user: user
+  stat: 
+    path: ~/.config/nvim 
+  register: nvchad
+
+- name: Download NVChad
+  become_user: user
+  shell: git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 
+  when: nvchad.stat.exists == true
+
+- name: check if tpm is installed
+  become_user: user
+  stat: 
+    path: ~/.tmux/plugins/tpm 
+  register: tpm
+
+- name: Download TPM
+  become_user: user
+  shell: git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+  when: tpm.stat.exists == true
+
 - name: copy wallpaper file
   copy:
     src: files/wallpaper.png
@@ -5,27 +27,21 @@
     owner: root
     group: root
 
-- name: download s76 gnome extension
-  ansible.builtin.git:
-    repo: https://github.com/pop-os/gnome-shell-extension-system76-power.git
-    dest: /tmp/s76-power
-    single_branch: yes
-
-- name: Build s76 gnome extension
-  community.general.make:
-    chdir: /tmp/s76-power
-
-- name: Run 'install' s76 gnome extension
-  community.general.make:
-    chdir: /tmp/s76-power
-    target: install       
-
 - name: set gnome config
   become_user: user
   dconf:
     key: "{{ item.key }}"
     value: "{{ item.value }}"
   with_items:  "{{ dconf }}"      
+
+- name: check if dotfiles is installed
+  become_user: user
+  stat:
+    path: ~/.dotfiles
+  register: dotfiles
+
+- name: download dotfiles
+  shell: git clone https://github.com/DeveloperDurp/dotfiles.git ~/.dotfiles
 
 - name: Check that Oh My ZSH is installed
   become_user: user 
@@ -39,14 +55,6 @@
   args:
     creates: "~/.oh-my-zsh"
   when: not ohmyzsh_result.stat.exists
-
-- name: "Create a default ZSH configuration"
-  become_user: user
-  template:
-    src: files/zshrc
-    dest: "~/.zshrc"
-    owner: "user"
-    force: yes
 
 - name: Check that Auto Suggestions is installed
   become_user: user
@@ -72,39 +80,3 @@
     mode: '0770'     
     state: directory 
 
-- name: Create credentials folder
-  become_user: user
-  ansible.builtin.file:
-    path: ~/.credentials
-    owner: "user"
-    group: "user"
-    mode: '0700'     
-    state: directory 
-
-- name: Create config folders
-  become_user: user
-  ansible.builtin.file:
-    path: ~/.config/{{ item.dest }}
-    owner: "user"
-    group: "user"
-    mode: '0700'     
-    state: directory 
-  with_items:  "{{ configs }}"       
-#
-#- name: "Copy Config files"
-#  become_user: user
-#  template:
-#    src: "templates/{{ item.src }}"
-#    dest: "~/.config/{{ item.dest }}/{{ item.destname }}"
-#    owner: "user"
-#    force: yes    
-#  with_items:  "{{ configs }}"          
-
-- name: Copy Config files
-  become_user: user
-  copy:
-    src: "files/{{ item.src }}"
-    dest: "~/.config/{{ item.dest }}/{{ item.destname }}"
-    owner: "user"
-    force: yes  
-  with_items:  "{{ configs }}"   

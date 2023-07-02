@@ -1,48 +1,48 @@
 dconf:
-    - {key: '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings', value: "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']"}
-    - {key: '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/binding', value: "'<Super>t'"}
-    - {key: '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/command', value: "'terminator'"}
-    - {key: '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/name', value: "'Terminal'"}
-    - {key: '/org/gnome/desktop/wm/keybindings/close', value: "['<Alt>F4']"}
-    - {key: '/org/gnome/desktop/wm/keybindings/switch-to-workspace-left', value: "['<Control><Super>Left']"}
-    - {key: '/org/gnome/desktop/wm/keybindings/switch-to-workspace-right', value: "['<Control><Super>Right']"}
-    - {key: '/org/gnome/desktop/wm/keybindings/move-to-workspace-left', value: "['<Alt><Super>Left']"}
-    - {key: '/org/gnome/desktop/wm/keybindings/move-to-workspace-right', value: "['<Alt><Super>Right']"}
-    - {key: '/org/gnome/shell/keybindings/toggle-overview', value: "@as []"}
-    - {key: '/org/gnome/desktop/datetime/automatic-timezone', value: "true"}
-    - {key: '/org/gnome/desktop/interface/clock-show-date', value: "true"}
-    - {key: '/org/gnome/desktop/interface/clock-format', value: "'12h'"}
-    - {key: '/org/gnome/desktop/background/picture-uri', value: "'file:///usr/share/backgrounds/ansible-wallpaper.png'"}
-    - {key: '/org/gnome/desktop/background/picture-uri-dark', value: "'file:///usr/share/backgrounds/ansible-wallpaper.png'"}
-    - {key: '/org/gnome/desktop/interface/color-scheme', value: "'prefer-dark'"}
-    - {key: '/org/gnome/desktop/interface/gtk-theme', value: "'Adwaita-dark'"}
-    #- {key: '/org/gnome/desktop/interface/document-font-name', value: "'FuraMono Nerd Font 11'"}
-    #- {key: '/org/gnome/desktop/interface/monospace-font-name', value: "'FuraMono Nerd Font 11'"}
-    #- {key: '/org/gnome/desktop/interface/font-name', value: "'FuraMono Nerd Font 11'"}
-    #- {key: '/org/gnome/desktop/wm/preferences/titlebar-font', value: "'FuraMono Nerd Font 11'"}
-    - {key: '/org/gnome/desktop/sound', value: "true"}
-    - {key: '/org/gnome/shell/favorite-apps', value: "['io.gitlab.librewolf-community.desktop', 'brave-browser.desktop', 'terminator.desktop', 'org.gnome.Nautilus.desktop']"}
-    - {key: '/org/gnome/shell/enabled-extensions', value: "['pop-shell@system76.com','dash-to-dock@micxgx.gmail.com', 'system76-power@system76.com']"}
-    - {key: '/org/gnome/shell/extensions/pop-shell/tile-by-default', value: "true"}
-    - {key: '/org/gnome/shell/extensions/pop-shell/gap-inner', value: "uint32 1"}
-    - {key: '/org/gnome/shell/extensions/pop-shell/gap-outer', value: "uint32 1"}
-    - {key: '/org/gnome/shell/extensions/pop-shell/pop-workspace-down', value: "@as []"}
-    - {key: '/org/gnome/shell/extensions/pop-shell/pop-workspace-up', value: "@as []"}
-    - {key: '/org/gnome/shell/extensions/dash-to-dock/dash-max-icon-size', value: "32"}
-    - {key: '/org/gnome/shell/extensions/dash-to-dock/show-trash', value: "false"}
-    - {key: '/org/gnome/shell/extensions/dash-to-dock/show-mounts', value: "false"}
-    - {key: '/org/gnome/shell/extensions/dash-to-dock/apply-custom-theme', value: "true"}
-    - {key: '/org/gnome/shell/extensions/dash-to-dock/multi-monitor', value: "true"}
-    - {key: '/org/gnome/desktop/peripherals/touchpad', value: "false"}
-    #s- {key: '/org/gnome/desktop/default-applications/terminal', value: "'exec /usr/bin/terminator'"}
-    - {key: '/org/gnome/mutter/keybindings/toggle-tiled-left', value: "@as []"}
-    - {key: '/org/gnome/mutter/keybindings/toggle-tiled-right', value: "@as []"}
-    - {key: '/org/gnome/desktop/peripherals/touchpad/natural-scroll', value: "false"}
-    - {key: '/org/gnome/desktop/peripherals/touchpad/tap-to-click', value: "true"}
-    - {key: '/org/gnome/desktop/peripherals/touchpad/two-finger-scrolling-enabled', value: "true"}
-      # - {key: '/org/gnome/desktop/notifications/application/gnome-power-panel/application-id', value: "gnome-power-panel.desktop"}
-    - {key: '/org/gnome/desktop/notifications/application/gnome-power-panel/enable', value: "false"}
-    #- {key: 'org.gnome.desktop.wm.preferences button-layout', value 'minimize,close'}
+  #    - {key: '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings', value: "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']"}
+  #    - {key: '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/binding', value: "'<Super>t'"}
+  #    - {key: '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/command', value: "'terminator'"}
+  #    - {key: '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/name', value: "'Terminal'"}
+  #    - {key: '/org/gnome/desktop/wm/keybindings/close', value: "['<Alt>F4']"}
+  #    - {key: '/org/gnome/desktop/wm/keybindings/switch-to-workspace-left', value: "['<Control><Super>Left']"}
+  #    - {key: '/org/gnome/desktop/wm/keybindings/switch-to-workspace-right', value: "['<Control><Super>Right']"}
+  #    - {key: '/org/gnome/desktop/wm/keybindings/move-to-workspace-left', value: "['<Alt><Super>Left']"}
+  #    - {key: '/org/gnome/desktop/wm/keybindings/move-to-workspace-right', value: "['<Alt><Super>Right']"}
+  #    - {key: '/org/gnome/shell/keybindings/toggle-overview', value: "@as []"}
+  #    - {key: '/org/gnome/desktop/datetime/automatic-timezone', value: "true"}
+  #    - {key: '/org/gnome/desktop/interface/clock-show-date', value: "true"}
+  #    - {key: '/org/gnome/desktop/interface/clock-format', value: "'12h'"}
+      - {key: '/org/gnome/desktop/background/picture-uri', value: "'file:///usr/share/backgrounds/ansible-wallpaper.png'"}
+      - {key: '/org/gnome/desktop/background/picture-uri-dark', value: "'file:///usr/share/backgrounds/ansible-wallpaper.png'"}
+  #    - {key: '/org/gnome/desktop/interface/color-scheme', value: "'prefer-dark'"}
+  #    - {key: '/org/gnome/desktop/interface/gtk-theme', value: "'Adwaita-dark'"}
+  #    #- {key: '/org/gnome/desktop/interface/document-font-name', value: "'FuraMono Nerd Font 11'"}
+  #    #- {key: '/org/gnome/desktop/interface/monospace-font-name', value: "'FuraMono Nerd Font 11'"}
+  #    #- {key: '/org/gnome/desktop/interface/font-name', value: "'FuraMono Nerd Font 11'"}
+  #    #- {key: '/org/gnome/desktop/wm/preferences/titlebar-font', value: "'FuraMono Nerd Font 11'"}
+  #    - {key: '/org/gnome/desktop/sound', value: "true"}
+  #    - {key: '/org/gnome/shell/favorite-apps', value: "['io.gitlab.librewolf-community.desktop', 'brave-browser.desktop', 'terminator.desktop', 'org.gnome.Nautilus.desktop']"}
+  #    - {key: '/org/gnome/shell/enabled-extensions', value: "['pop-shell@system76.com','dash-to-dock@micxgx.gmail.com', 'system76-power@system76.com']"}
+  #    - {key: '/org/gnome/shell/extensions/pop-shell/tile-by-default', value: "true"}
+  #    - {key: '/org/gnome/shell/extensions/pop-shell/gap-inner', value: "uint32 1"}
+  #    - {key: '/org/gnome/shell/extensions/pop-shell/gap-outer', value: "uint32 1"}
+  #    - {key: '/org/gnome/shell/extensions/pop-shell/pop-workspace-down', value: "@as []"}
+  #    - {key: '/org/gnome/shell/extensions/pop-shell/pop-workspace-up', value: "@as []"}
+  #    - {key: '/org/gnome/shell/extensions/dash-to-dock/dash-max-icon-size', value: "32"}
+  #    - {key: '/org/gnome/shell/extensions/dash-to-dock/show-trash', value: "false"}
+  #    - {key: '/org/gnome/shell/extensions/dash-to-dock/show-mounts', value: "false"}
+  #    - {key: '/org/gnome/shell/extensions/dash-to-dock/apply-custom-theme', value: "true"}
+  #    - {key: '/org/gnome/shell/extensions/dash-to-dock/multi-monitor', value: "true"}
+  #    - {key: '/org/gnome/desktop/peripherals/touchpad', value: "false"}
+  #    #s- {key: '/org/gnome/desktop/default-applications/terminal', value: "'exec /usr/bin/terminator'"}
+  #    - {key: '/org/gnome/mutter/keybindings/toggle-tiled-left', value: "@as []"}
+  #    - {key: '/org/gnome/mutter/keybindings/toggle-tiled-right', value: "@as []"}
+  #    - {key: '/org/gnome/desktop/peripherals/touchpad/natural-scroll', value: "false"}
+  #    - {key: '/org/gnome/desktop/peripherals/touchpad/tap-to-click', value: "true"}
+  #    - {key: '/org/gnome/desktop/peripherals/touchpad/two-finger-scrolling-enabled', value: "true"}
+  #      # - {key: '/org/gnome/desktop/notifications/application/gnome-power-panel/application-id', value: "gnome-power-panel.desktop"}
+  #    - {key: '/org/gnome/desktop/notifications/application/gnome-power-panel/enable', value: "false"}
+  #    #- {key: 'org.gnome.desktop.wm.preferences button-layout', value 'minimize,close'}
 
 configs:
     - {src: 'terminator', dest: 'terminator', destname: 'config'}

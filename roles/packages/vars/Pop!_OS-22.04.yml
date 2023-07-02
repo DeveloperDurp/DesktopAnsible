@@ -14,6 +14,7 @@ required_packages:
   - libvirt-daemon     
   - qemu-kvm
   - virt-manager
+  - stow
 
 apt_keys:
   - https://packages.cloud.google.com/apt/doc/apt-key.gpg
