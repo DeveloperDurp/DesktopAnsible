@@ -1,5 +1,6 @@
 
 required_packages:
+  - ripgrep
   - ansible
   - libfuse2
   - git
