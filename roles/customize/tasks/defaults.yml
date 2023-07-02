@@ -41,7 +41,9 @@
   register: dotfiles
 
 - name: download dotfiles
+  become_user: user
   shell: git clone https://github.com/DeveloperDurp/dotfiles.git ~/.dotfiles
+  when: dotfiles.stat.exists == true
 
 - name: Check that Oh My ZSH is installed
   become_user: user 
