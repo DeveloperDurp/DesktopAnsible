@@ -27,12 +27,12 @@
     owner: root
     group: root
 
-- name: set gnome config
-  become_user: user
-  dconf:
-    key: "{{ item.key }}"
-    value: "{{ item.value }}"
-  with_items:  "{{ dconf }}"      
+      #- name: set gnome config
+      #  become_user: user
+      #  dconf:
+      #    key: "{{ item.key }}"
+      #    value: "{{ item.value }}"
+      #  with_items:  "{{ dconf }}"      
 
 - name: check if dotfiles is installed
   become_user: user
