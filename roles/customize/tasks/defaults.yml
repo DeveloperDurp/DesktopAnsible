@@ -47,7 +47,7 @@
 
 - name: run stow
   become_user: user
-  shell: "stow -t $HOME -v {{ item }}"
+  shell: "stow -t $HOME -v ~/.dotfiles/{{ item }}"
   with_items:  "{{ stowdir }}"   
 
 - name: Check that Oh My ZSH is installed
