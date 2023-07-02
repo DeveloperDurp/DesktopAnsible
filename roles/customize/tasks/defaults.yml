@@ -7,7 +7,7 @@
 - name: Download NVChad
   become_user: user
   shell: git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 
-  when: nvchad.stat.exists == true
+  when: nvchad.stat.exists == false
 
 - name: check if tpm is installed
   become_user: user
@@ -18,7 +18,7 @@
 - name: Download TPM
   become_user: user
   shell: git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-  when: tpm.stat.exists == true
+  when: tpm.stat.exists == false
 
 - name: copy wallpaper file
   copy:
@@ -43,7 +43,7 @@
 - name: download dotfiles
   become_user: user
   shell: git clone https://github.com/DeveloperDurp/dotfiles.git ~/.dotfiles
-  when: dotfiles.stat.exists == true
+  when: dotfiles.stat.exists == false
 
 - name: Check that Oh My ZSH is installed
   become_user: user 
