@@ -76,6 +76,11 @@
   shell: git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
   when: not auto_suggestions_result.stat.exists
   
+- name: Restore zshrc file
+  become_user: user
+  shell: rm ~/.zshrc && mv ~/.zshrc.pre-oh-my-zsh ~/.zshrc
+  ignore_errors: true
+
 - user:
     name: "user"
     shell: /usr/bin/zsh
