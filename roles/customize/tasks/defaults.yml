@@ -75,11 +75,17 @@
   become_user: user
   shell: git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
   when: not auto_suggestions_result.stat.exists
-  
+
+- name: check if zshrc file was moved
+  become_user: user
+  stat: 
+    path: ~/.zshrc.pre-oh-my-zsh 
+  register: zshrc
+
 - name: Restore zshrc file
   become_user: user
   shell: rm ~/.zshrc && mv ~/.zshrc.pre-oh-my-zsh ~/.zshrc
-  ignore_errors: true
+  when: zshrc.stat.exists == true
 
 - user:
     name: "user"
