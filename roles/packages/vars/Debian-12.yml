@@ -11,14 +11,9 @@ required_packages:
   - helm
   - htop
   - libvirt-daemon     
-  - qemu-kvm
-  - virt-manager
   - stow
   - tmux
-  - terminator
-  - system76-keyboard-configurator
   - xsel
-  - openvpn 
   - easy-rsa 
   - docker.io
   - httpie
@@ -35,27 +30,7 @@ apt_repo:
   - deb https://baltocdn.com/helm/stable/debian/ all main
   - deb [arch=amd64] https://packages.microsoft.com/ubuntu/22.04/prod jammy main
       
-required_flatpak_packages:
-    - io.gitlab.librewolf-community
-    - com.brave.Browser
-    - com.bitwarden.desktop
-    - com.discordapp.Discord 
-    - com.makemkv.MakeMKV
-    - org.chromium.Chromium
-    - org.chromium.Chromium.Codecs
-    - org.remmina.Remmina
-    - org.signal.Signal
-    - org.videolan.VLC
-    - com.spotify.Client 
-services_to_enable:
-    - libvirtd.service
-
 groups_to_add:
-    - adm
-    - libvirt
-    - kvm
-    - input
-    - disk
     - docker
 
 

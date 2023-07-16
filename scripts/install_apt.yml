@@ -3,12 +3,14 @@
     url: "{{ item }}"
   with_items: "{{ apt_keys }}"
   become: yes
+  when: apt_keys is defined   
 
 - name: add apt repository
   apt_repository:
     repo: "{{ item }}"
   with_items: "{{ apt_repo }}"
   become: yes
+  when: apt_repo is defined   
 
 - name: Upgrade Packages
   package:
