@@ -4,6 +4,9 @@
 - name: "Install flatpak"
   include_tasks: "../scripts/install_flatpak.yml"
 
+- name: "Install fonts"
+  include_tasks: "../scripts/install_fonts.yml"
+
 - name: Enable wayland 
   shell: sed -i 's/WaylandEnable=false/WaylandEnable=true/' /etc/gdm3/custom.conf
 
