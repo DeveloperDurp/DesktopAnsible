@@ -9,9 +9,6 @@
 - name: "OS dependant"
   include_tasks: "{{ ansible_distribution }}-{{ ansible_distribution_version }}.yml"
 
-- name: "Install fonts"
-  include_tasks: "../scripts/install_fonts.yml"
-
 - name: "Install nvim"
   include_tasks: "../scripts/install_nvim.yml"
   
