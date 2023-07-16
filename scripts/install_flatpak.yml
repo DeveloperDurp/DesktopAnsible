@@ -1,0 +1,17 @@
+- name: configure flatpak
+  community.general.flatpak_remote:
+    name: flathub
+    state: present
+    flatpakrepo_url: https://dl.flathub.org/repo/flathub.flatpakrepo
+
+- name: update flatpaks
+  shell:
+    cmd: flatpak update --noninteractive    
+
+- name: install flatpak
+  become_user: user
+  community.general.flatpak:
+    name: "{{ item }}"
+  with_items:  "{{ required_flatpak_packages }}"     
+  when: required_flatpak_packages is defined
+  ignore_errors: yes

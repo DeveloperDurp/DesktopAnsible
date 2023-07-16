@@ -1,0 +1,21 @@
+- name: ensure fonts directory
+  become_user: user
+  file:
+    path: "~/.fonts"
+    state: directory
+
+- name: FiraCode exists
+  become_user: user
+  shell: "ls ~/.fonts/*{{ item.name }}*"
+  register: FiraCode_exists
+  ignore_errors: yes
+  with_items:  "{{ fonts }}"   
+
+- name: Download FiraCode
+  when: FiraCode_exists is failed
+  become_user: user
+  ansible.builtin.unarchive:
+    src: "{{ item.url }}" 
+    dest: "~/.fonts/"
+    remote_src: yes
+  with_items:  "{{ fonts }}"     
