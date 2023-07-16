@@ -7,8 +7,8 @@
 - name: "Install fonts"
   include_tasks: "../scripts/install_fonts.yml"
 
-- name: Enable wayland 
-  shell: sed -i 's/WaylandEnable=false/WaylandEnable=true/' /etc/gdm3/custom.conf
+#- name: Enable wayland 
+#  shell: sed -i 's/WaylandEnable=false/WaylandEnable=true/' /etc/gdm3/custom.conf
 
 - name: Start and enable services
   ansible.builtin.systemd:

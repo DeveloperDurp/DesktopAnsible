@@ -1,0 +1,5 @@
+- name: "Install tpm"
+  include_tasks: "../scripts/install_tpm.yml"
+
+- name: "Install OhMyZSH"
+  include_tasks: "../scripts/install_ohmyzsh.yml"

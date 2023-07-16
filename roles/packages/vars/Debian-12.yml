@@ -2,6 +2,7 @@ required_packages:
   - ripgrep
   - ansible
   - libfuse2
+  - fuse
   - git
   - zsh
   - nfs-common
@@ -13,11 +14,10 @@ required_packages:
   - libvirt-daemon     
   - stow
   - tmux
-  - xsel
   - easy-rsa 
   - docker.io
   - httpie
-  - wl-clipboard
+  
 
 apt_keys:
   - https://packages.cloud.google.com/apt/doc/apt-key.gpg

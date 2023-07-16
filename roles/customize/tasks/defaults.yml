@@ -1,14 +1,3 @@
-- name: check if nvchad is installed
-  become_user: user
-  stat: 
-    path: ~/.config/nvim 
-  register: nvchad
-
-- name: Download NVChad
-  become_user: user
-  shell: git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 
-  when: nvchad.stat.exists == false
-
 - name: check if tpm is installed
   become_user: user
   stat: 

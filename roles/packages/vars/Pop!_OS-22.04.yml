@@ -17,12 +17,11 @@ required_packages:
   - tmux
   - terminator
   - system76-keyboard-configurator
-  - xsel
+  - xclip
   - openvpn 
   - easy-rsa 
   - docker.io
   - httpie
-  - wl-clipboard
 
 apt_keys:
   - https://packages.cloud.google.com/apt/doc/apt-key.gpg
