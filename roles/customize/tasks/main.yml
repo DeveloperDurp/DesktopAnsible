@@ -6,4 +6,4 @@
   - "vars/defaults.yml"
 
 - name:
-  include_tasks: "defaults.yml"
+  include_tasks: "{{ ansible_distribution }}-{{ ansible_distribution_version }}.yml"
