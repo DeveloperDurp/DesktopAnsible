@@ -3,12 +3,12 @@
   ignore_errors: yes
   register: Go_Installed
 
-- name: Install Go
-  when: Go_Installed.stdout != go_verison
-  ansible.builtin.unarchive:
-    src: "https://go.dev/dl/{{ go_verison  }}.linux-amd64.tar.gz" 
-    dest: "/usr/local"
-    remote_src: yes
+    #- name: Install Go
+    #  when: Go_Installed.stdout != go_verison
+    #  ansible.builtin.unarchive:
+    #    src: "https://go.dev/dl/{{ go_verison  }}.linux-amd64.tar.gz" 
+    #    dest: "/usr/local"
+    #    remote_src: yes
 
 - name: Install Go Modules
   become_user: user
@@ -21,7 +21,7 @@
     - "github.com/go-delve/delve/cmd/dlv@latest"
     - "github.com/sentiens/goptest@latest"
     - "github.com/josharian/impl@latest"
-
+    - "github.com/jesseduffield/lazygit@latest"
 
 
 
