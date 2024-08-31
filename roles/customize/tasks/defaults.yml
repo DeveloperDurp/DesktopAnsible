@@ -1,80 +1,12 @@
-- name: check if tpm is installed
-  become_user: user
-  stat: 
-    path: ~/.tmux/plugins/tpm 
-  register: tpm
+- name: install fonts
+  include_tasks: "./scripts/install_fonts.yml"
 
-- name: Download TPM
-  become_user: user
-  shell: git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-  when: tpm.stat.exists == false
+- name: generate ssh keys
+  include_tasks: "./scripts/configure_ssh.yml"
 
-- name: copy wallpaper file
-  copy:
-    src: files/wallpaper.png
-    dest: /usr/share/backgrounds/ansible-wallpaper.png
-    owner: root
-    group: root
-
-- name: set gnome config
-  become_user: user
-  dconf:
-    key: "{{ item.key }}"
-    value: "{{ item.value }}"
-  with_items:  "{{ dconf }}"      
-
-- name: check if dotfiles is installed
-  become_user: user
-  stat:
-    path: ~/.dotfiles
-  register: dotfiles
-
-- name: download dotfiles
-  become_user: user
-  shell: git clone https://github.com/DeveloperDurp/dotfiles.git ~/.dotfiles
-  when: dotfiles.stat.exists == false
-
-- name: run stow
-  become_user: user
-  shell: "stow -t $HOME -v {{ item }}"
-  args:
-    chdir: ~/.dotfiles
-  with_items:  "{{ stowdir }}"   
-
-- name: Check that Oh My ZSH is installed
-  become_user: user 
-  stat:
-    path: "~/.oh-my-zsh"
-  register: ohmyzsh_result
-
-- name: Install Oh My ZSH
-  become_user: user
-  shell: sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-  args:
-    creates: "~/.oh-my-zsh"
-  when: not ohmyzsh_result.stat.exists
-
-- name: Check that Auto Suggestions is installed
-  become_user: user
-  stat:
-    path: ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
-  register: auto_suggestions_result
-
-- name: Install Auto Suggestions
-  become_user: user
-  shell: git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
-  when: not auto_suggestions_result.stat.exists
-
-- name: check if zshrc file was moved
-  become_user: user
-  stat: 
-    path: ~/.zshrc.pre-oh-my-zsh 
-  register: zshrc
-
-- name: Restore zshrc file
-  become_user: user
-  shell: rm ~/.zshrc && mv ~/.zshrc.pre-oh-my-zsh ~/.zshrc
-  when: zshrc.stat.exists == true
+  #- name: Configure Gitlab SSH
+  #  become_user: user
+  #  ansible.builtin.command: pwsh -f ./scripts/configure_gitlab.ps1 "{{ GITLAB_TOKEN }}"
 
 - user:
     name: "user"
@@ -89,3 +21,16 @@
     mode: '0770'     
     state: directory 
 
+- name: run stow
+  become_user: user
+  shell: "stow --adopt ."
+  args:
+    chdir: ~/.dotfiles
+
+- name: set gnome config
+  become_user: user
+  dconf:
+    key: "{{ item.key }}"
+    value: "{{ item.value }}"
+  with_items:  "{{ dconf }}"      
+  when: dconf is defined   

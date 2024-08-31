@@ -1,4 +1,4 @@
-- name: Load a variable file based on the OS type
+- name: Load a variable file
   include_vars: "{{ item }}"
   with_first_found:
   - "vars/{{ ansible_distribution }}-{{ ansible_distribution_version }}.yml"
@@ -6,14 +6,6 @@
   - "vars/{{ ansible_os_family }}.yml"
   - "vars/defaults.yml"
 
-- name: "OS dependant"
-  include_tasks: "{{ ansible_distribution }}-{{ ansible_distribution_version }}.yml"
+- name:
+  include_tasks: "defaults.yml"
 
-- name: "Install nvim"
-  include_tasks: "../scripts/install_nvim.yml"
-  
-- name: "Install Go"
-  include_tasks: "../scripts/install_go.yml"
-
-- name: Configure Gitlab SSH Key
-  ansible.builtin.command: pwsh -f ./scripts/configure-ssh.ps1 '{{ lookup('ansible.builtin.env', 'GITLAB_TOKEN') }}'

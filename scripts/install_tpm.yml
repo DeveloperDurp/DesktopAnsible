@@ -1,10 +1,4 @@
-- name: check if tpm is installed
+- name: Install tmux TPM
   become_user: user
-  stat: 
-    path: ~/.tmux/plugins/tpm 
-  register: tpm
-
-- name: Download TPM
-  become_user: user
-  shell: git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-  when: tpm.stat.exists == false
+  shell: "git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm"
+  ignore_errors: yes

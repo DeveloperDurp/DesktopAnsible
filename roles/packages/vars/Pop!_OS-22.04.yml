@@ -1,60 +1,53 @@
-required_packages:
-  - ripgrep
-  - ansible
-  - libfuse2
-  - git
-  - zsh
-  - nfs-common
-  - powershell
-  - kubectl
+install_homebrew_if_missing: true
+
+required_packages_brew:
+  - lazygit
+  - fzf
+  - glab
+  - go
+  - neovim
+  - oh-my-posh
+  - tpm
   - terraform
-  - helm
-  - htop
-  - libvirt-daemon     
-  - qemu-kvm
-  - virt-manager
-  - stow
-  - tmux
-  - terminator
-  - system76-keyboard-configurator
-  - xclip
-  - openvpn 
-  - easy-rsa 
-  - docker.io
-  - httpie
+  - kubernetes-cli
+  - zsh-autosuggestions
+  - bitwarden-cli
+  - hashicorp/tap/vault
+  - ffmpeg
+  - ttyd
+  - bat
+  - eza
+  - fastfetch
+  - vivid
+  - yazi
 
 apt_keys:
-  - https://packages.cloud.google.com/apt/doc/apt-key.gpg
-  - https://apt.releases.hashicorp.com/gpg
-  - https://baltocdn.com/helm/signing.asc
   - https://packages.microsoft.com/keys/microsoft.asc
 apt_repo:
-  - deb https://apt.kubernetes.io/ kubernetes-xenial main
-  - deb [arch=amd64] https://apt.releases.hashicorp.com jammy main
-  - deb https://baltocdn.com/helm/stable/debian/ all main
   - deb [arch=amd64] https://packages.microsoft.com/ubuntu/22.04/prod jammy main
-      
-required_flatpak_packages:
-    - io.gitlab.librewolf-community
-    - com.brave.Browser
-    - com.bitwarden.desktop
-    - com.discordapp.Discord 
-    - com.makemkv.MakeMKV
-    - org.chromium.Chromium
-    - org.chromium.Chromium.Codecs
-    - org.remmina.Remmina
-    - org.signal.Signal
-    - org.videolan.VLC
-    - com.spotify.Client 
-services_to_enable:
-    - libvirtd.service
 
-groups_to_add:
-    - adm
-    - libvirt
-    - kvm
-    - input
-    - disk
-    - docker
+required_packages_apt:
+  - powershell
+  - curl
+  - wofi
+  - swaybg
+  - swayidle
+  - swaylock
+  - swayimg
+  - kanshi
+  - waybar
+  #- sway-notification-center
+  - grim
+  - slurp
+  - openresolv
+  - podman
+  - brightnessctl
+  - pavucontrol
+  - kitty
 
+flatpak_remote:
+  - {name: 'flathub', url: "https://dl.flathub.org/repo/flathub.flatpakrepo"}
+
+required_packages_flatpak:
+  - VSCodium
 

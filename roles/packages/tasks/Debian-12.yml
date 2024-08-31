@@ -1,2 +1,0 @@
-- name: "Install APT Packages"
-  include_tasks: "../scripts/install_apt.yml"

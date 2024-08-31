@@ -17,11 +17,12 @@
     update_cache: yes
     upgrade: safe 
   become: yes
+  when: required_packages_apt is defined   
 
 - name: Install Packages
   apt:
     state: latest
     update_cache: yes
-    pkg: "{{ required_packages }}"
+    pkg: "{{ required_packages_apt }}"
   become: yes
-  when: required_packages is defined   
+  when: required_packages_apt is defined   
