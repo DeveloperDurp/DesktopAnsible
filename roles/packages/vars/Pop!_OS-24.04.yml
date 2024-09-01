@@ -24,7 +24,6 @@ required_packages_brew:
   - zsh-history-substring-search
   - opentofu
   - helm
-  - powershell
 
 required_packages_apt:
   - sway
@@ -92,3 +91,7 @@ go_apps:
 
 systemd_service:
   - libvirtd.service
+   
+user_groups:
+  - video
+  - sudo

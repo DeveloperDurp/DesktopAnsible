@@ -9,3 +9,4 @@
   user: 
     name: user
     groups: libvirt,libvirt-qemu,kvm,input,disk
+    append: yes

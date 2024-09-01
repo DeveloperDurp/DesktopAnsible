@@ -16,5 +16,8 @@
 - name: configure systemd
   include_tasks: "./scripts/configure_systemd.yml"
 
+- name: configure groups
+  include_tasks: "./scripts/configure_groups.yml"
+
 - name: configure qemu
   include_tasks: "./scripts/configure_qemu.yml"
