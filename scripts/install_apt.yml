@@ -1,3 +1,11 @@
+- name: download gpg
+  ansible.builtin.get_url:
+    url: "{{ item.url }}"
+    dest: "/etc/apt/keyrings/{{ item.name }}.asc"
+  with_items: "{{ apt_repo_gpg }}"
+  become: yes
+  when: apt_repo_gpg is defined
+
 - name: add apt repository key
   apt_key:
     url: "{{ item }}"
