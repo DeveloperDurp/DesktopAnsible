@@ -53,6 +53,7 @@ required_packages_apt:
   - fzf
   - ripgrep
   - libsecret-tools
+  - rclone
 
 apt_keys:
   - https://packages.microsoft.com/keys/microsoft.asc
