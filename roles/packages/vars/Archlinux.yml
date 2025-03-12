@@ -76,6 +76,8 @@ required_packages_pacman:
   - smbclient
   - gvfs-smb
   - gvfs
+  - cosmic
+  - htop
 
 flatpak_remote:
   - {name: 'flathub', url: "https://dl.flathub.org/repo/flathub.flatpakrepo"}
