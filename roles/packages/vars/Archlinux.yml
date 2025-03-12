@@ -67,7 +67,6 @@ required_packages_pacman:
   - ly
   - seahorse
   - kitty
-  - secret-tool
 
 flatpak_remote:
   - {name: 'flathub', url: "https://dl.flathub.org/repo/flathub.flatpakrepo"}
@@ -88,3 +87,9 @@ go_apps:
   - github.com/charmbracelet/vhs@latest
   - github.com/charmbracelet/glow@latest
   - github.com/swaggo/swag/cmd/swag@latest
+
+
+yay: 
+  - nwg-look
+  - catppuccin-gtk-theme-mocha
+
