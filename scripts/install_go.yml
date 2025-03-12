@@ -1,5 +1,5 @@
 - name: Register the current Go version (if any)
-  command: /usr/local/go/bin/go version
+  command: go version
   ignore_errors: yes
   register: go_version
   changed_when: false

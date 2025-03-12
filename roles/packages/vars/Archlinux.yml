@@ -1,3 +1,8 @@
+required_packages_brew:
+  - oh-my-posh
+  - zsh-history-substring-search
+  - zsh-autosuggestions
+
 required_packages_pacman:
   - sway
   - waybar
@@ -67,6 +72,10 @@ required_packages_pacman:
   - ly
   - seahorse
   - kitty
+  - brightnessctl
+  - smbclient
+  - gvfs-smb
+  - gvfs
 
 flatpak_remote:
   - {name: 'flathub', url: "https://dl.flathub.org/repo/flathub.flatpakrepo"}
@@ -81,6 +90,7 @@ required_packages_flatpak:
 systemd_service:
   - ly.service
   - libvirtd.service
+  - com.system76.PowerDaemon.service
 
 go_apps:
   - github.com/jorgerojas26/lazysql@latest
@@ -92,4 +102,16 @@ go_apps:
 yay: 
   - nwg-look
   - catppuccin-gtk-theme-mocha
+  - ttf-go-nerd
+  - system76-firmware-daemon 
+  - system76-firmware 
+  - firmware-manager 
+  - system76-power 
+  - gnome-shell-extension-system76-power-git 
+  - system76-driver 
+  - system76-dkms 
+  - system76-acpi-dkms 
+  - system76-io-dkms
+  - wdisplays
+  
 
