@@ -79,6 +79,7 @@ required_packages_pacman:
   - cosmic
   - htop
   - npm
+  - ripgrep
 
 flatpak_remote:
   - {name: 'flathub', url: "https://dl.flathub.org/repo/flathub.flatpakrepo"}
