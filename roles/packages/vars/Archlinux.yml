@@ -78,6 +78,7 @@ required_packages_pacman:
   - gvfs
   - cosmic
   - htop
+  - npm
 
 flatpak_remote:
   - {name: 'flathub', url: "https://dl.flathub.org/repo/flathub.flatpakrepo"}
