@@ -80,6 +80,10 @@ required_packages_pacman:
   - htop
   - npm
   - ripgrep
+  - podman-compose
+  - bluez
+  - xsettingsd
+  - dnsutils
 
 flatpak_remote:
   - {name: 'flathub', url: "https://dl.flathub.org/repo/flathub.flatpakrepo"}
@@ -90,6 +94,9 @@ required_packages_flatpak:
   - org.gtk.Gtk3theme.Pop-dark
   - com.github.tchx84.Flatseal
   - com.vscodium.codium
+  - com.protonvpn.www
+  - me.proton.Mail
+  - org.chromium.Chromium
 
 systemd_service:
   - ly.service
@@ -117,5 +124,7 @@ yay:
   - system76-acpi-dkms 
   - system76-io-dkms
   - wdisplays
+  - bluetuith
+  - powershell
   
 
