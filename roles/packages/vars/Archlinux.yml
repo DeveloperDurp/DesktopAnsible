@@ -84,6 +84,8 @@ required_packages_pacman:
   - bluez
   - xsettingsd
   - dnsutils
+  - yq
+  - jq
 
 flatpak_remote:
   - {name: 'flathub', url: "https://dl.flathub.org/repo/flathub.flatpakrepo"}
