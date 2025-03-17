@@ -24,3 +24,6 @@
 
 - name: configure qemu
   include_tasks: "./scripts/configure_qemu.yml"
+
+- name: configure bat
+  include_tasks: "./scripts/configure_bat.yml"

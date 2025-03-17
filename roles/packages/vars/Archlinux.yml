@@ -86,6 +86,7 @@ required_packages_pacman:
   - dnsutils
   - yq
   - jq
+  - k9s
 
 flatpak_remote:
   - {name: 'flathub', url: "https://dl.flathub.org/repo/flathub.flatpakrepo"}
