@@ -87,6 +87,8 @@ required_packages_pacman:
   - yq
   - jq
   - k9s
+  - opentofu
+  - file-roller
 
 flatpak_remote:
   - {name: 'flathub', url: "https://dl.flathub.org/repo/flathub.flatpakrepo"}
@@ -100,6 +102,8 @@ required_packages_flatpak:
   - com.protonvpn.www
   - me.proton.Mail
   - org.chromium.Chromium
+  - org.libreoffice.LibreOffice
+  - com.brave.Browser
 
 systemd_service:
   - ly.service
