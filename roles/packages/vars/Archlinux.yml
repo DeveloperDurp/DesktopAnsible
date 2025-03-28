@@ -89,6 +89,7 @@ required_packages_pacman:
   - k9s
   - opentofu
   - file-roller
+  - ufw
 
 flatpak_remote:
   - {name: 'flathub', url: "https://dl.flathub.org/repo/flathub.flatpakrepo"}
@@ -106,9 +107,10 @@ required_packages_flatpak:
   - com.brave.Browser
 
 systemd_service:
-  - ly.service
+  - cosmic-greeter.service
   - libvirtd.service
   - com.system76.PowerDaemon.service
+  - ufw.service
 
 go_apps:
   - github.com/jorgerojas26/lazysql@latest
