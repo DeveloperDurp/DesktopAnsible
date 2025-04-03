@@ -123,6 +123,8 @@ yay:
   - nwg-look
   - catppuccin-gtk-theme-mocha
   - ttf-go-nerd
+  - ttf-hack-nerd
+  - ttf-jetbrains-mono-nerd
   - system76-firmware-daemon
   - system76-firmware
   - firmware-manager
