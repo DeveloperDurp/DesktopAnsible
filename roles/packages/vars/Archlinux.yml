@@ -90,6 +90,7 @@ required_packages_pacman:
   - opentofu
   - file-roller
   - ufw
+  - gimp
 
 flatpak_remote:
   - { name: "flathub", url: "https://dl.flathub.org/repo/flathub.flatpakrepo" }
