@@ -91,6 +91,7 @@ required_packages_pacman:
   - file-roller
   - ufw
   - gimp
+  - yazi
 
 flatpak_remote:
   - { name: "flathub", url: "https://dl.flathub.org/repo/flathub.flatpakrepo" }
@@ -108,8 +109,8 @@ required_packages_flatpak:
   - com.brave.Browser
 
 systemd_service:
-  #- cosmic-greeter.service
-  - ly.service
+  - cosmic-greeter.service
+  #- ly.service
   - libvirtd.service
   - com.system76.PowerDaemon.service
   - ufw.service
