@@ -120,6 +120,7 @@ go_apps:
   - github.com/charmbracelet/vhs@latest
   - github.com/charmbracelet/glow@latest
   - github.com/swaggo/swag/cmd/swag@latest
+  - github.com/air-verse/air@latest
 
 yay:
   - nwg-look
