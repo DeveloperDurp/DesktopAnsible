@@ -92,6 +92,7 @@ required_packages_pacman:
   - ufw
   - gimp
   - yazi
+  - cronie
 
 flatpak_remote:
   - { name: "flathub", url: "https://dl.flathub.org/repo/flathub.flatpakrepo" }
@@ -109,6 +110,7 @@ required_packages_flatpak:
   - com.brave.Browser
 
 systemd_service:
+  - cronie.service
   - cosmic-greeter.service
   #- ly.service
   - libvirtd.service
