@@ -14,6 +14,7 @@
     group: root
     mode: '0644'
   with_items: "{{ service_files.files }}"
+  when: service_files is defined   
 
 - name: Combine predefined list and filesystem paths
   set_fact:
