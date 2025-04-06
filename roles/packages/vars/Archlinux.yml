@@ -93,6 +93,9 @@ required_packages_pacman:
   - gimp
   - yazi
   - cronie
+  - fuse2
+  - libappindicator-gtk3
+  - webkit2gtk-4.1 
 
 flatpak_remote:
   - { name: "flathub", url: "https://dl.flathub.org/repo/flathub.flatpakrepo" }
@@ -116,6 +119,7 @@ systemd_service:
   - libvirtd.service
   - com.system76.PowerDaemon.service
   - ufw.service
+  - podman.socket
 
 go_apps:
   - github.com/jorgerojas26/lazysql@latest
